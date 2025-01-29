@@ -1,0 +1,67 @@
+{
+  "name": "mql5",
+  "displayName": "MQL5",
+  "description": "MQL5 Language Support",
+  "version": "0.0.1",
+  "type": "module",
+  "publisher": "chaploud",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "mql5",
+    "mqh",
+    "mq5"
+  ],
+  "icon": "assets/mql5-logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaploud/MQL5-VSCode-Extension"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "mql5",
+        "aliases": [
+          "MQL5",
+          "mql5"
+        ],
+        "extensions": [
+          ".mq5",
+          ".mqh"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "activationEvents": [
+      "onLanguage:mql5"
+    ],
+    "grammars": [
+      {
+        "language": "mql5",
+        "scopeName": "source.mql5",
+        "path": "./syntaxes/mql5.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "eslint-config-prettier": "^10.0.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.22.0",
+    "vite": "^6.0.5"
+  }
+}
