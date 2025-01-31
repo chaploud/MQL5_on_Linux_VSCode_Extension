@@ -1,34 +1,219 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "MQL5",
+  "scopeName": "source.mql",
+  "fileTypes": [
+    "mq5",
+    "mqh"
+  ],
+  "foldingStartMarker": "(^.)?\\{",
+  "foldingStopMarker": "(^\\s*)?\\}",
   "patterns": [
     {
-      "include": "#keywords"
+      "include": "#comments"
     },
     {
-      "include": "#strings"
+      "match": "\\b(const|private|protected|public|virtual|override)\\b",
+      "name": "storage.modifier.source.mql"
+    },
+    {
+      "match": "\\b(break|case|continue|default|delete|do|else|for|if|new|operator|return|sizeof|switch|while)\\b",
+      "name": "keyword.control.mql"
+    },
+    {
+      "match": "#\\b(property|resource|undef|import|define|include|ifdef|ifndef|else|endif)\\b",
+      "name": "keyword.control.preprocessor.mql"
+    },
+    {
+      "match": "\\b(bool|char|class|color|datetime|double|enum|float|int|long|short|string|struct|uchar|uint|ulong|ushort|void)\\b",
+      "name": "storage.type.mql"
+    },
+    {
+      "match": "\\b(extern|input|static)\\b",
+      "name": "storage.modifier.mql"
+    },
+    {
+      "match": "\\b(true|TRUE)\\b",
+      "name": "constant.language.boolean.true.mql"
+    },
+    {
+      "match": "\\b(false|FALSE)\\b",
+      "name": "constant.language.boolean.false.mql"
+    },
+    {
+      "match": "\\b(null|NULL)\\b",
+      "name": "constant.language.null.mql"
+    },
+    {
+      "match": "\\b(empty|EMPTY)\\b",
+      "name": "constant.language.empty.mql"
+    },
+    {
+      "match": "\\b(this|strict|template|typename)\\b",
+      "name": "constant.language.other.mql"
+    },
+    {
+      "match": "\\b(([A-Z_]+)(\\d*)?)\\b",
+      "name": "constant.language.mql"
+    },
+    {
+      "match": "\\b(([a-zA-Z_]+)([a-zA-Z0-9_]*)?)\\b",
+      "name": "variable.other.mql"
+    },
+    {
+      "match": "\\b([1-9]+[0-9]*|0[a-z,A-Z,0-9]*)\\b",
+      "name": "constant.numeric.integer.mql"
+    },
+    {
+      "match": "\\b(\\d*\\.\\d*)\\b",
+      "name": "constant.numeric.double.mql"
+    },
+    {
+      "match": "&lt;\\=|&gt;\\=|\\=\\=|&lt;|&gt;|\\!\\=",
+      "name": "keyword.operator.comparison.mql"
+    },
+    {
+      "match": "\\+\\=|\\-\\=|\\*\\=|\\/\\=|//\\=|%\\=|&amp;\\=|\\|\\=|\\^\\=|&gt;&gt;\\=|&lt;&lt;\\=",
+      "name": "keyword.operator.assignment.augmented.mql"
+    },
+    {
+      "match": "%|\\*|\\-|\\+|\\/|\\+\\+|\\-\\-|\\^|&gt;&gt;|&lt;&lt;",
+      "name": "keyword.operator.arithmetic.mql"
+    },
+    {
+      "match": "\\=",
+      "name": "keyword.operator.assignment.mql"
+    },
+    {
+      "match": "\\!|&amp;&amp;|\\|\\|",
+      "name": "keyword.operator.logical.mql"
+    },
+    {
+      "begin": "\"",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.mql"
+        }
+      },
+      "end": "\"",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.mql"
+        }
+      },
+      "name": "string.quoted.double.mql",
+      "patterns": [
+        {
+          "include": "#string_escaped_char"
+        },
+        {
+          "include": "#string_placeholder"
+        }
+      ]
+    },
+    {
+      "begin": "'",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.mql"
+        }
+      },
+      "end": "'",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.mql"
+        }
+      },
+      "name": "string.quoted.single.mql",
+      "patterns": [
+        {
+          "include": "#string_escaped_char"
+        }
+      ]
+    },
+    {
+      "include": "#block"
+    },
+    {
+      "begin": "(?x) (?:  ^ | (?: (?= \\s ) (?<!else|new|return) (?<=\\w) | (?= \\s*[A-Za-z_] ) (?<!&&) (?<=[*&gt;]) )) (\\s*) (?!(while|for|do|if|else|switch|catch|return)\\s*\\() ((?: [A-Za-z_][A-Za-z0-9_]*+ | ::~? )++ | (?: (?<=operator) (?: [-*&gt;=+!]+ | \\(\\) | \\[\\] ) )) \\s*(?=\\()",
+      "beginCaptures": {
+        "1": {
+          "name": "punctuation.whitespace.function.leading.mql"
+        },
+        "3": {
+          "name": "entity.name.function.mql"
+        },
+        "4": {
+          "name": "punctuation.definition.parameters.mql"
+        }
+      },
+      "end": "(?<=\\})|(?=#)|(;)",
+      "name": "meta.function.mql",
+      "patterns": [
+        {
+          "include": "#comments"
+        },
+        {
+          "include": "#parens"
+        },
+        {
+          "include": "#block"
+        }
+      ]
     }
   ],
   "repository": {
-    "keywords": {
+    "block": {
+      "begin": "\\{",
+      "end": "\\}",
+      "name": "meta.block.mql",
       "patterns": [
         {
-          "name": "keyword.control.mql5",
-          "match": "\\b(if|while|for|return)\\b"
+          "include": "#block_innards"
         }
       ]
     },
-    "strings": {
-      "name": "string.quoted.double.mql5",
-      "begin": "\"",
-      "end": "\"",
+    "block_innards": {
       "patterns": [
         {
-          "name": "constant.character.escape.mql5",
-          "match": "\\\\."
+          "captures": {
+            "1": {
+              "name": "punctuation.whitespace.support.function.leading.mql"
+            },
+            "2": {
+              "name": "support.function.C99.mql"
+            }
+          },
+          "match": ""
+        },
+        {
+          "captures": {
+            "1": {
+              "name": "punctuation.whitespace.function-call.leading.mql"
+            },
+            "2": {
+              "name": "support.function.any-method.mql"
+            },
+            "3": {
+              "name": "punctuation.definition.parameters.mql"
+            }
+          },
+          "match": "(?x) (?: (?= \\s ) (?:(?<!else|new|return) | (?<!\\w)) (\\s+))? (\\b (?!(while|for|do|if|else|switch|catch|return)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++ ) \\s*(\\()",
+          "name": "meta.function-call.mql"
+        },
+        {
+          "captures": {
+            "1": {
+              "name": "variable.other.mql"
+            },
+            "2": {
+              "name": "punctuation.definition.parameters.mql"
+            }
+          },
+          "match": "(?x) (?x) (?: (?: (?= \\s ) (?<!else|new|return) (?<=\\w)\\s+ ) ) ( (?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ | (?: (?<=operator) (?: [-*&&lt;>=+!]+ | \\(\\) | \\[\\] ) )? ) \\s*(\\()",
+          "name": "meta.initialization.mql"
         }
       ]
     }
-  },
-  "scopeName": "source.mql5"
+  }
 }

@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "mql5-output",
+  "scopeName": "source.mql5.output",
+  "patterns": [
+    {
+      "match": "\"(.*?)\"",
+      "name": "string.quoted"
+    },
+    {
+      "match": "'(.*?)'",
+      "name": "string.quoted"
+    },
+    {
+      "match": "\\b\\d+\\.?\\d*?\\b",
+      "name": "constant.numeric"
+    },
+    {
+      "match": "\\b(?i:(([a-z]|[0-9]|[_|-])*(\\.([a-z]|[0-9]|[_|-])*)+))\\b",
+      "name": "support.type"
+    },
+    {
+      "match": "(?<=\\[Done\\])(.+)",
+      "name": "token.done.mql"
+    },
+    {
+      "match": "(\\[Done\\])",
+      "name": "token.heading.mql"
+    },
+    {
+      "match": "(?<=\\[Warning\\])(.+)",
+      "name": "token.warning.mql"
+    },
+    {
+      "match": "(\\[Warning\\])",
+      "name": "token.heading.mql"
+    },
+    {
+      "match": "(?<=\\[Starting\\])(.+)",
+      "name": "token.done.mql"
+    },
+    {
+      "match": "(\\[Starting\\])",
+      "name": "token.heading.mql"
+    },
+    {
+      "match": "(?<=\\[Error\\])(.+)",
+      "name": "token.error.mql"
+    },
+    {
+      "match": "(\\[Error\\])",
+      "name": "token.heading.mql"
+    },
+    {
+      "match": "(?<=\\[Info\\])(.+)",
+      "name": "token.info.mql"
+    },
+    {
+      "match": "(\\[Info\\])",
+      "name": "token.heading.mql"
+    },
+    {
+      "match": "\\b(?i:(Info))(\\:|\\b)",
+      "name": "token.info.mql"
+    },
+    {
+      "match": "\\berror+(?!\\:)\\b",
+      "name": "token.error.mql"
+    },
+    {
+      "match": "\\b(?i:(warning))(\\:|\\b)",
+      "name": "token.warning.mql"
+    },
+    {
+      "match": "([a-zA-Z]+:\\\\.+(?= :))",
+      "name": "storage"
+    }
+  ]
+}

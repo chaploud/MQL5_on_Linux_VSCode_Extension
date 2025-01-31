@@ -34,6 +34,12 @@
           ".mqh"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mql5-output",
+        "mimetypes": [
+          "text/x-code-output"
+        ]
       }
     ],
     "activationEvents": [
@@ -47,7 +53,7 @@
       },
       {
         "language": "mql5-output",
-        "scopeName": "mql5.output",
+        "scopeName": "source.mql5.output",
         "path": "./syntaxes/mql5.out.tmLanguage"
       }
     ]
