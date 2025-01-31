@@ -13,8 +13,8 @@ export default tseslint.config(
     ],
     files: ["**/*.{ts}"],
     languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
+      ecmaVersion: 2023,
+      globals: globals.node,
     },
     plugins: {},
     rules: {},
