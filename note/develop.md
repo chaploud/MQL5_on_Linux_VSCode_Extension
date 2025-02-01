@@ -105,10 +105,13 @@ C:\Program Files\MetaTrader 5\MQL5\Include\Trade\AccountInfo.mqh : information: 
 Result: 17 errors, 0 warnings
 ````
 
-## Wineについて
+### Wineでの実行例
 
-- `wine`
-- `winedbg`
-  - デバッグ実
-- `wineconsole`
-  - Windows側でのコンソール実行
+```bash
+pushd .
+export MT5="${HOME}/.mt5/drive_c/Program Files/MetaTrader 5"
+export TARGET_FILE="MQL5\Experts\Examples\MACD\MACDSample.mq5"
+cd "${MT5}"
+WINPREFIX=${HOME}/.mt5 wine "MetaEditor64.exe" /compile:"${TARGET_FILE}" /log
+popd
+```
