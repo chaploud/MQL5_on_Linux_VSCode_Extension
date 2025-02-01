@@ -1,7 +1,7 @@
 {
-  "name": "mql5",
-  "displayName": "MQL5",
-  "description": "MQL5 Language Support",
+  "name": "mql5-linux",
+  "displayName": "MQL5 on Linux",
+  "description": "MQL5 Language Support for Linux",
   "version": "0.0.1",
   "type": "module",
   "publisher": "chaploud",
@@ -16,10 +16,10 @@
     "mqh",
     "mq5"
   ],
-  "icon": "assets/mql5-logo.png",
+  "icon": "assets/images/mql5-logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chaploud/MQL5-VSCode-Extension"
+    "url": "https://github.com/chaploud/MQL5-Linux-VSCode-Extension"
   },
   "contributes": {
     "languages": [
@@ -56,7 +56,18 @@
         "scopeName": "source.mql5.output",
         "path": "./syntaxes/mql5.out.tmLanguage"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "MQL5 on Linux",
+      "type": "object",
+      "properties": {
+        "mql5.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable MQL5 language support."
+        }
+      }
+    }
   },
   "extensionDependencies": [
     "ms-vscode.cpptools"
@@ -71,6 +82,7 @@
   "devDependencies": {
     "@eslint/js": "^9.19.0",
     "@types/node": "^22.12.0",
+    "@types/vscode": "^1.96.0",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "globals": "^15.14.0",

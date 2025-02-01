@@ -1,4 +1,4 @@
-# MQL5-VSCode-Extension
+# MQL5-Linux-VSCode-Extension
 
 **Under development**
 **Only supports Ubuntu 24.04**

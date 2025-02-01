@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "MQL5",
-  "scopeName": "source.mql",
+  "scopeName": "source.mql5",
   "fileTypes": [
     "mq5",
     "mqh"

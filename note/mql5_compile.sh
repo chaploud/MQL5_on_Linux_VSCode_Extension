@@ -122,6 +122,12 @@ eval "${COMMAND}"
 # ログファイルの表示
 # TODO: フォルダ対象やプロジェクトファイルの場合はログファイルはどういう形式になるのか?
 LOG="${TARGET_FILE%.*}.log"
+
+if [ ! -f "${LOG}" ]; then
+  echo "Log file '${LOG}' is not found."
+  exit 1
+fi
+
 cat "${LOG}"
 
 # MQL5\Experts\Examples\MACD\MACDSample.mq5 : information: compiling 'MACDSample.mq5'
