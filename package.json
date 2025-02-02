@@ -58,13 +58,28 @@
       }
     ],
     "configuration": {
-      "title": "MQL5 on Linux",
       "type": "object",
+      "title": "MQL5 on Linux",
       "properties": {
-        "mql5.enable": {
+        "mql5-linux.WINEPREFIX": {
+          "type": "string",
+          "default": "${HOME}/.mt5",
+          "description": "The path to the WINEPREFIX where MetaTrader 5 is installed."
+        },
+        "mql5-linux.MT5_directory": {
+          "type": "string",
+          "default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5",
+          "description": "The path to the MetaTrader 5 installation directory."
+        },
+        "mql5-linux.MetaEditor_path": {
+          "type": "string",
+          "default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5/MetaEditor64.exe",
+          "description": "The path to the MetaEditor executable(.exe)."
+        },
+        "mql5-linux.delete_compile_log": {
           "type": "boolean",
           "default": true,
-          "description": "Enable/disable MQL5 language support."
+          "description": "Delete the compile log after the compilation."
         }
       }
     }

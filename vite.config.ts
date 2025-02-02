@@ -4,13 +4,13 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/main.ts",
-      name: "mql5-linux-vscode-extension",
-      fileName: () => `main.min.js`,
+      name: "mql5-on-linux",
+      fileName: () => `main.js`,
     },
     outDir: "dist",
     rollupOptions: {
       external: ["vscode"],
     },
-    sourcemap: true,
+    minify: false,
   },
 });

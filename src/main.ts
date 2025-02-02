@@ -13,6 +13,18 @@ import * as fs from "fs";
 // docstringをホバーで表示
 // デバッグ機能はむずかしい(これはMetaEditorおよびMT5側でやってもらうしかない)
 
-function Compile() {
-  vscode.commands.executeCommand("workbench.action.tasks.build");
+function getConfig() {
+  const config = vscode.workspace.getConfiguration("mql5-linux");
+  return {
+    WINEPREFIX: config.get("WINEPREFIX"),
+    MT5: config.get("MT5_directory"),
+    MetaEditor: config.get("MetaEditor_path"),
+    deleteLog: config.get("delete_compile_log"),
+  };
 }
+
+function Compile() {
+  console.log("Compile");
+}
+
+Compile();
