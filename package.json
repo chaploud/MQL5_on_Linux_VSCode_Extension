@@ -1,5 +1,5 @@
 {
-	"name": "mql5-linux",
+	"name": "mql5-on-linux",
 	"displayName": "MQL5 on Linux",
 	"description": "MQL5 Language Support for Linux",
 	"version": "0.0.1",
@@ -19,7 +19,7 @@
 	"icon": "assets/images/mql5-logo.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/chaploud/MQL5-Linux-VSCode-Extension"
+		"url": "https://github.com/chaploud/MQL5_on_Linux_VSCode_Extension"
 	},
 	"activationEvents": [],
 	"main": "./out/extension.js",
@@ -60,22 +60,22 @@
 			"type": "object",
 			"title": "MQL5 on Linux",
 			"properties": {
-				"mql5-linux.WINEPREFIX": {
+				"mql5-on-linux.WINEPREFIX": {
 					"type": "string",
 					"default": "${HOME}/.mt5",
 					"description": "The path to the WINEPREFIX where MetaTrader 5 is installed."
 				},
-				"mql5-linux.MT5Directory": {
+				"mql5-on-linux.MT5Directory": {
 					"type": "string",
 					"default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5",
 					"description": "The path to the MetaTrader 5 installation directory."
 				},
-				"mql5-linux.MetaEditorPath": {
+				"mql5-on-linux.MetaEditorPath": {
 					"type": "string",
 					"default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5/MetaEditor64.exe",
 					"description": "The path to the MetaEditor executable(.exe)."
 				},
-				"mql5-linux.DeleteCompileLog": {
+				"mql5-on-linux.DeleteCompileLog": {
 					"type": "boolean",
 					"default": true,
 					"description": "Delete the compile log after the compilation."
@@ -84,8 +84,9 @@
 		},
 		"commands": [
 			{
-				"command": "mql5-linux.helloWorld",
-				"title": "Hello World"
+				"command": "mql5-on-linux.helloWorld",
+				"title": "Hello World",
+				"category": "MQL5 on Linux"
 			}
 		]
 	},
