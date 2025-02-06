@@ -1,120 +1,114 @@
 {
-	"name": "mql5-linux",
-	"displayName": "MQL5 on Linux",
-	"description": "MQL5 Language Support for Linux",
-	"version": "0.0.1",
-	"type": "module",
-	"publisher": "chaploud",
-	"engines": {
-		"vscode": "^1.96.0"
-	},
-	"categories": [
-		"Programming Languages"
-	],
-	"keywords": [
-		"mql5",
-		"mqh",
-		"mq5"
-	],
-	"icon": "assets/images/mql5-logo.png",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/chaploud/MQL5-Linux-VSCode-Extension"
-	},
-	"activationEvents": [
-		"onCommand:mql5-linux.getConfig"
-	],
-	"contributes": {
-		"languages": [
-			{
-				"id": "mql5",
-				"aliases": [
-					"MQL5",
-					"mql5"
-				],
-				"extensions": [
-					".mq5",
-					".mqh"
-				],
-				"configuration": "./language-configuration.json"
-			},
-			{
-				"id": "mql5-output",
-				"mimetypes": [
-					"text/x-code-output"
-				]
-			}
-		],
-		"grammars": [
-			{
-				"language": "mql5",
-				"scopeName": "source.mql5",
-				"path": "./syntaxes/mql5.tmLanguage.json"
-			},
-			{
-				"language": "mql5-output",
-				"scopeName": "source.mql5.output",
-				"path": "./syntaxes/mql5.out.tmLanguage"
-			}
-		],
-		"configuration": {
-			"type": "object",
-			"title": "MQL5 on Linux",
-			"properties": {
-				"mql5-linux.WINEPREFIX": {
-					"type": "string",
-					"default": "${HOME}/.mt5",
-					"description": "The path to the WINEPREFIX where MetaTrader 5 is installed."
-				},
-				"mql5-linux.MT5Directory": {
-					"type": "string",
-					"default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5",
-					"description": "The path to the MetaTrader 5 installation directory."
-				},
-				"mql5-linux.MetaEditorPath": {
-					"type": "string",
-					"default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5/MetaEditor64.exe",
-					"description": "The path to the MetaEditor executable(.exe)."
-				},
-				"mql5-linux.DeleteCompileLog": {
-					"type": "boolean",
-					"default": true,
-					"description": "Delete the compile log after the compilation."
-				}
-			}
-		},
-		"commands": [
-			{
-				"command": "mql5-linux.getConfig",
-				"title": "Get Configuration of MQL5 on Linux",
-				"category": "MQL5"
-			}
-		]
-	},
-	"main": "./dist/main.js",
-	"extensionDependencies": [
-		"ms-vscode.cpptools"
-	],
-	"scripts": {
-		"dev": "vite",
-		"build": "tsc && vite build",
-		"lint": "eslint .",
-		"format": "prettier --write .",
-		"preview": "vite preview"
-	},
-	"devDependencies": {
-		"@eslint/js": "^9.19.0",
-		"@types/node": "^22.12.0",
-		"@types/vscode": "^1.96.0",
-		"eslint": "^9.19.0",
-		"eslint-config-prettier": "^10.0.1",
-		"globals": "^15.14.0",
-		"prettier": "^3.4.2",
-		"typescript": "^5.7.3",
-		"typescript-eslint": "^8.22.0",
-		"vite": "^6.0.11"
-	},
-	"__metadata": {
-		"size": 93610989
-	}
+  "name": "mql5-linux",
+  "displayName": "MQL5 on Linux",
+  "description": "MQL5 Language Support for Linux",
+  "version": "0.0.1",
+  "publisher": "chaploud",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "mt5",
+    "mql5",
+    "mq5",
+    "mqh"
+  ],
+  "icon": "assets/images/mql5-logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaploud/MQL5-Linux-VSCode-Extension"
+  },
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "mql5",
+        "aliases": [
+          "MQL5",
+          "mql5"
+        ],
+        "extensions": [
+          ".mq5",
+          ".mqh"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mql5-output",
+        "mimetypes": [
+          "text/x-code-output"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mql5",
+        "scopeName": "source.mql5",
+        "path": "./syntaxes/mql5.tmLanguage.json"
+      },
+      {
+        "language": "mql5-output",
+        "scopeName": "source.mql5.output",
+        "path": "./syntaxes/mql5.out.tmLanguage.json"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "MQL5 on Linux",
+      "properties": {
+        "mql5-linux.WINEPREFIX": {
+          "type": "string",
+          "default": "${HOME}/.mt5",
+          "description": "The path to the WINEPREFIX where MetaTrader 5 is installed."
+        },
+        "mql5-linux.MT5Directory": {
+          "type": "string",
+          "default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5",
+          "description": "The path to the MetaTrader 5 installation directory."
+        },
+        "mql5-linux.MetaEditorPath": {
+          "type": "string",
+          "default": "${HOME}/.mt5/drive_c/Program Files/MetaTrader 5/MetaEditor64.exe",
+          "description": "The path to the MetaEditor executable(.exe)."
+        },
+        "mql5-linux.DeleteCompileLog": {
+          "type": "boolean",
+          "default": true,
+          "description": "Delete the compile log after the compilation."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension-sample.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
 }
