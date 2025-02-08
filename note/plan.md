@@ -17,3 +17,7 @@
   "editor.defaultFormatter": "ms-vscode.cpptools"
 }
 ```
+
+## 広報
+
+- MQL5コミュニティーの記事に紹介記事を書こう
