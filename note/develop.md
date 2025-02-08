@@ -100,11 +100,3 @@ npm run test # vscode-testを用いたテスト
 ## ユーザーからの声をGitHubとマーケットプレースで共有
 
 - Integrate to the [report issue](https://code.visualstudio.com/api/get-started/wrapping-up#issue-reporting) flow to get issue and feature requests reported by users.
-
-## 設計
-
-- どのディレクトリでも対応できるようにする
-- コンパイラのパス設定くらいは要求する
-- 補完を完璧にこなす
-- includeした関数なども補完対象に含める
-- Ubuntuで動かすため、色々と工夫が必要

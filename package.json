@@ -21,7 +21,6 @@
 		"type": "git",
 		"url": "https://github.com/chaploud/MQL5_on_Linux_VSCode_Extension"
 	},
-	"activationEvents": [],
 	"main": "./out/extension.js",
 	"contributes": {
 		"languages": [
@@ -90,6 +89,9 @@
 			}
 		]
 	},
+	"extensionDependencies": [
+		"ms-vscode.cpptools"
+	],
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
