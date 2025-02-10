@@ -69,3 +69,43 @@ yo code # ここから始まる
 ### 拡張機能のエントリーファイル
 
 - `activate`, `deactivate` 関数がエクスポートされる
+- `activate`: Activation Eventの後に呼び出される
+- `deactivate`: 拡張機能が非活性になったときに呼び出される
+  - 多くの場合、あまり必要がない
+- VSCode extension APIは `@types/vscode` に宣言されている
+- 以下に説明や例がたくさんあるので見てみてね
+  - Extension Guide Listing
+  - vs-code-extension-samples
+  - UX Guidelines
+- Help: Report Issueで、拡張機能を選択してバグ報告をしてもらうことができる
+  - GitHub Issue連携もできそう
+- 統合テストができるよ
+- マーケットプレイスに公開できるよ
+- 継続的インテグレーションのセットアップができるよ
+
+## 拡張機能でできること
+
+- Contribution Points
+- VSCode API
+- 拡張機能で用いることのできる機能
+- さらに詳しいトピックへのリンク
+- 拡張機能のアイデア
+
+### 共通の機能
+
+- コマンドの登録
+- 設定
+- キーバインド
+- コンテキストメニュー
+- ワークスペースまたはグローバルデータの保存
+- 通知の表示
+- ユーザー入力を扱うためのQuick Pickの利用
+- システムファイルやフォルダの選択
+- 長い処理へのProgress API
+
+### テーマ
+
+- エディタの色
+- UIの色
+- 既存のTextMate themを持ち込む
+- カスタムアイコン

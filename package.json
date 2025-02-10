@@ -84,8 +84,11 @@
 		"commands": [
 			{
 				"command": "mql5-on-linux.helloWorld",
-				"title": "Hello World",
-				"category": "MQL5 on Linux"
+				"title": "Hello World"
+			},
+			{
+				"command": "mql5-on-linux.reportIssue",
+				"title": "Report Issue"
 			}
 		]
 	},
