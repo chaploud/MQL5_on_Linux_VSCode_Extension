@@ -5,7 +5,7 @@
 
 ## 作業内容
 
-```
+```bash
 $ npm install -g yo generator-code
 $ yo code
 
@@ -32,7 +32,7 @@ npm run test # vscode-testを用いたテスト
 
 ## ディレクトリの説明
 
-```
+```text
   .
   ├── .vscode/  # VSCodeで本プロジェクトを扱う際の設定
   ├── .vscode-test/  # ビルド済みテストツールが格納される(ignore)
