@@ -154,21 +154,24 @@
       }
     },
     {
-      "comment": "access modifiers",
+      "comment": "access modifiers (specifiers)",
       "name": "storage.modifier.mql5",
       "match": "\\b(const|private|virtual|delete|protected|override|public)\\b"
     },
     {
-      "match": "\\b(break|case|continue|default|delete|do|else|for|if|new|operator|return|sizeof|switch|while)\\b",
-      "name": "keyword.control.mql5"
+      "comment": "memory classes",
+      "name": "storage.input.mql5",
+      "match": "\\b(extern|input|static|sinput)\\b"
     },
     {
-      "match": "\\b(bool|char|class|color|datetime|double|enum|float|int|long|short|string|struct|uchar|uint|ulong|ushort|void)\\b",
-      "name": "storage.type.mql5"
+      "comment": "data types",
+      "name": "storage.type.mql5",
+      "match": "\\b(void|bool|char|short|int|long|uchar|ushort|uint|ulong|double|float|string|color|datetime|enum|struct|class|interface)\\b"
     },
     {
-      "match": "\\b(extern|input|static)\\b",
-      "name": "storage.modifier.mql5"
+      "comment": "control operators",
+      "name": "keyword.control.mql5",
+      "match": "\\b(return|if|else|for|while|do|break|continue|switch|case|default|new|delete|operator|sizeof|pack|offsetof|dynamic_cast)\\b"
     },
     {
       "match": "\\b(true|TRUE)\\b",
