@@ -4,33 +4,6 @@
   "fileTypes": ["mq5", "mqh"],
   "foldingStartMarker": "(^.)?\\{",
   "foldingStopMarker": "(^\\s*)?\\}",
-  "repository": {
-    "comments": {
-      "patterns": [
-        {
-          "name": "comment.block.mql5",
-          "comment": "block comments",
-          "begin": "/\\*",
-          "end": "\\*/"
-        },
-        {
-          "name": "comment.line.double-slash.mql5",
-          "comment": "single-line comments",
-          "begin": "//",
-          "end": "$\\n?"
-        }
-      ]
-    },
-    "escape_characters": {
-      "patterns": [
-        {
-          "comment": "escape characters",
-          "name": "constant.character.escape.mql5",
-          "match": "\\\\."
-        }
-      ]
-    }
-  },
   "patterns": [
     {
       "include": "#comments"
@@ -78,11 +51,6 @@
       ]
     },
     {
-      "comment": "preprocessor directives",
-      "name": "keyword.control.preprocessor.mql5",
-      "match": "#\\b(property|resource|define|undef|include|import|ifdef|ifndef|else|endif)\\b"
-    },
-    {
       "comment": "include paths",
       "name": "string.other.mql5",
       "begin": "(#include)(?:\\s*)(<)",
@@ -100,6 +68,11 @@
           "name": "punctuation.definition.string.end.mql5"
         }
       }
+    },
+    {
+      "comment": "preprocessor directives",
+      "name": "keyword.control.preprocessor.mql5",
+      "match": "#\\b(property|resource|define|undef|include|import|ifdef|ifndef|else|endif)\\b"
     },
     {
       "comment": "access modifiers (specifiers)",
@@ -142,19 +115,36 @@
       "match": "\\(|\\)|\\[|\\]"
     },
     {
+      "include": "#builtin_functions"
+    },
+    {
+      "include": "#builtin_indicators"
+    },
+    {
+      "include": "#predefined_variables"
+    },
+    {
+      "include": "#predefined_constants"
+    },
+    {
+      "comment": "string constants",
+      "name": "constant.string.mql5",
+      "match": "\\b\\w+\\b"
+    },
+    {
       "comment": "decimal integer and float numeric constants",
       "name": "constant.numeric.decimal.mql5",
       "match": "\\b([0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)\\b"
     },
     {
       "comment": "hexadecimal numeric constants",
-      "match": "\\b(0[xX][0-9a-fA-F]+)\\b",
-      "name": "constant.numeric.hex.mql5"
+      "name": "constant.numeric.hex.mql5",
+      "match": "\\b(0[xX][0-9a-fA-F]+)\\b"
     },
     {
       "comment": "color, datetime and binary numeric constants",
-      "match": "([CDB]\\'[0-9a-fA-FxX\\.\\:\\,\\s]*\\')",
-      "name": "constant.numeric.other.mql5"
+      "name": "constant.numeric.other.mql5",
+      "match": "([CDB]\\'[0-9a-fA-FxX\\.\\:\\,\\s]*\\')"
     },
     {
       "comment": "other variables",
@@ -163,6 +153,7 @@
     },
     {
       "comment": "code blocks",
+      "name": "meta.block.mql5",
       "begin": "(\\{)",
       "beginCaptures": {
         "0": {
@@ -175,12 +166,74 @@
           "name": "punctuation.definition.block.end.mql5"
         }
       },
-      "name": "meta.block.mql5",
       "patterns": [
         {
           "include": "$self"
         }
       ]
     }
-  ]
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "comment": "block comments",
+          "name": "comment.block.mql5",
+          "begin": "/\\*",
+          "end": "\\*/"
+        },
+        {
+          "comment": "single-line comments",
+          "name": "comment.line.double-slash.mql5",
+          "begin": "//",
+          "end": "$\\n?"
+        }
+      ]
+    },
+    "escape_characters": {
+      "patterns": [
+        {
+          "comment": "escape characters",
+          "name": "constant.character.escape.mql5",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "builtin_functions": {
+      "patterns": [
+        {
+          "comment": "MQL5 built-in functions and event handlers",
+          "name": "entity.name.function.mql5",
+          "match": "(?<!\\.)\\b()\\b"
+        }
+      ]
+    },
+    "builtin_indicators": {
+      "patterns": [
+        {
+          "comment": "MQL5 built-in indicators",
+          "name": "support.function.mql5",
+          "match": "(?<!\\.)\\b()\\b"
+        }
+      ]
+    },
+    "predefined_variables": {
+      "patterns": [
+        {
+          "comment": "MQL5 predefined variables",
+          "name": "variable.language.predefined.mql5",
+          "match": "\\b()\\b"
+        }
+      ]
+    },
+    "predefined_constants": {
+      "patterns": [
+        {
+          "comment": "MQL5 predefined constants",
+          "name": "support.constant.mql5",
+          "match": "\\b()\\b"
+        }
+      ]
+    }
+  }
 }
