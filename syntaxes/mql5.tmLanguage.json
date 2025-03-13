@@ -5,58 +5,6 @@
   "foldingStartMarker": "(^.)?\\{",
   "foldingStopMarker": "(^\\s*)?\\}",
   "repository": {
-    "block": {
-      "name": "meta.block.mql5",
-      "begin": "\\{",
-      "end": "\\}",
-      "patterns": [
-        {
-          "include": "#block_innards"
-        }
-      ]
-    },
-    "block_innards": {
-      "patterns": [
-        {
-          "captures": {
-            "1": {
-              "name": "punctuation.whitespace.support.function.leading.mql5"
-            },
-            "2": {
-              "name": "support.function.C99.mql5"
-            }
-          },
-          "match": ""
-        },
-        {
-          "captures": {
-            "1": {
-              "name": "punctuation.whitespace.function-call.leading.mql5"
-            },
-            "2": {
-              "name": "support.function.any-method.mql5"
-            },
-            "3": {
-              "name": "punctuation.definition.parameters.mql5"
-            }
-          },
-          "match": "(?x) (?: (?= \\s ) (?:(?<!else|new|return) | (?<!\\w)) (\\s+))? (\\b (?!(while|for|do|if|else|switch|catch|return)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++ ) \\s*(\\()",
-          "name": "meta.function-call.mql5"
-        },
-        {
-          "captures": {
-            "1": {
-              "name": "variable.other.mql5"
-            },
-            "2": {
-              "name": "punctuation.definition.parameters.mql5"
-            }
-          },
-          "match": "(?x) (?x) (?: (?: (?= \\s ) (?<!else|new|return) (?<=\\w)\\s+ ) ) ( (?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ | (?: (?<=operator) (?: [-*&&lt;>=+!]+ | \\(\\) | \\[\\] ) )? ) \\s*(\\()",
-          "name": "meta.initialization.mql5"
-        }
-      ]
-    },
     "comments": {
       "patterns": [
         {
@@ -156,7 +104,7 @@
     {
       "comment": "access modifiers (specifiers)",
       "name": "storage.modifier.mql5",
-      "match": "\\b(const|private|virtual|delete|protected|override|public)\\b"
+      "match": "\\b(const|private|protected|public|virtual|export)\\b"
     },
     {
       "comment": "memory classes",
@@ -171,91 +119,66 @@
     {
       "comment": "control operators",
       "name": "keyword.control.mql5",
-      "match": "\\b(return|if|else|for|while|do|break|continue|switch|case|default|new|delete|operator|sizeof|pack|offsetof|dynamic_cast)\\b"
+      "match": "\\b(return|if|else|for|while|do|break|continue|switch|case|default|new|delete)\\b"
     },
     {
-      "match": "\\b(true|TRUE)\\b",
-      "name": "constant.language.boolean.true.mql5"
+      "comment": "other keywords",
+      "name": "keyword.other.mql5",
+      "match": "\\b(operator|sizeof|this|template|typename|typedef|trash|defined|unsigned|dynamic_cast|override|final|pack|offsetof)\\b"
     },
     {
-      "match": "\\b(false|FALSE)\\b",
-      "name": "constant.language.boolean.false.mql5"
+      "comment": "defined macro constants",
+      "name": "keyword.other.mql5",
+      "match": "\\b(__COUNTER__|__CPU_ARCHITECTURE__|__DATETIME__|__DATE__|__FILE__|__FUNCSIG__|__FUNCTION__|__INCLUDE_LEVEL__|__LINE__|__MQL4BUILD__|__MQL5BUILD__|__MQL5__|__MQLBUILD__|__PATH__|__RANDOM__|__forceinline|__inline)\\b"
     },
     {
-      "match": "\\b(null|NULL)\\b",
-      "name": "constant.language.null.mql5"
+      "comment": "operators",
+      "match": "=|\\+|\\-|<|>|!|\\*|/|%|&|\\||~|\\^|,|:|\\?|;",
+      "name": "punctuation.definition.operator.mql5"
     },
     {
-      "match": "\\b(empty|EMPTY)\\b",
-      "name": "constant.language.empty.mql5"
+      "comment": "brackets",
+      "name": "punctuation.definition.brackets.mql5",
+      "match": "\\(|\\)|\\[|\\]"
     },
     {
-      "match": "\\b(this|strict|template|typename)\\b",
-      "name": "constant.language.other.mql5"
+      "comment": "decimal integer and float numeric constants",
+      "name": "constant.numeric.decimal.mql5",
+      "match": "\\b([0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?)\\b"
     },
     {
-      "match": "\\b(([A-Z_]+)(\\d*)?)\\b",
-      "name": "constant.language.mql5"
+      "comment": "hexadecimal numeric constants",
+      "match": "\\b(0[xX][0-9a-fA-F]+)\\b",
+      "name": "constant.numeric.hex.mql5"
     },
     {
-      "match": "\\b(([a-zA-Z_]+)([a-zA-Z0-9_]*)?)\\b",
-      "name": "variable.other.mql5"
+      "comment": "color, datetime and binary numeric constants",
+      "match": "([CDB]\\'[0-9a-fA-FxX\\.\\:\\,\\s]*\\')",
+      "name": "constant.numeric.other.mql5"
     },
     {
-      "match": "\\b([1-9]+[0-9]*|0[a-z,A-Z,0-9]*)\\b",
-      "name": "constant.numeric.integer.mql5"
+      "comment": "other variables",
+      "name": "variable.other.mql5",
+      "match": "\\b([a-zA-Z_]+[a-zA-Z0-9_]*)\\b"
     },
     {
-      "match": "\\b(\\d*\\.\\d*)\\b",
-      "name": "constant.numeric.double.mql5"
-    },
-    {
-      "match": "&lt;\\=|&gt;\\=|\\=\\=|&lt;|&gt;|\\!\\=",
-      "name": "keyword.operator.comparison.mql5"
-    },
-    {
-      "match": "\\+\\=|\\-\\=|\\*\\=|\\/\\=|//\\=|%\\=|&amp;\\=|\\|\\=|\\^\\=|&gt;&gt;\\=|&lt;&lt;\\=",
-      "name": "keyword.operator.assignment.augmented.mql5"
-    },
-    {
-      "match": "%|\\*|\\-|\\+|\\/|\\+\\+|\\-\\-|\\^|&gt;&gt;|&lt;&lt;",
-      "name": "keyword.operator.arithmetic.mql5"
-    },
-    {
-      "match": "\\=",
-      "name": "keyword.operator.assignment.mql5"
-    },
-    {
-      "match": "\\!|&amp;&amp;|\\|\\|",
-      "name": "keyword.operator.logical.mql5"
-    },
-    {
-      "include": "#block"
-    },
-    {
-      "begin": "(?x) (?:  ^ | (?: (?= \\s ) (?<!else|new|return) (?<=\\w) | (?= \\s*[A-Za-z_] ) (?<!&&) (?<=[*&gt;]) )) (\\s*) (?!(while|for|do|if|else|switch|catch|return)\\s*\\() ((?: [A-Za-z_][A-Za-z0-9_]*+ | ::~? )++ | (?: (?<=operator) (?: [-*&gt;=+!]+ | \\(\\) | \\[\\] ) )) \\s*(?=\\()",
+      "comment": "code blocks",
+      "begin": "(\\{)",
       "beginCaptures": {
-        "1": {
-          "name": "punctuation.whitespace.function.leading.mql5"
-        },
-        "3": {
-          "name": "entity.name.function.mql5"
-        },
-        "4": {
-          "name": "punctuation.definition.parameters.mql5"
+        "0": {
+          "name": "punctuation.definition.block.begin.mql5"
         }
       },
-      "end": "(?<=\\})|(?=#)|(;)",
-      "name": "meta.function.mql5",
+      "end": "(\\})",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.block.end.mql5"
+        }
+      },
+      "name": "meta.block.mql5",
       "patterns": [
         {
-          "include": "#comments"
-        },
-        {
-          "include": "#parens"
-        },
-        {
-          "include": "#block"
+          "include": "$self"
         }
       ]
     }
