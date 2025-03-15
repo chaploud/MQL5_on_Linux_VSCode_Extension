@@ -1,6 +1,6 @@
 {
   "name": "MQL5",
-  "scopeName": "source.mql55",
+  "scopeName": "source.mql5",
   "fileTypes": ["mq5", "mqh"],
   "foldingStartMarker": "(^.)?\\{",
   "foldingStopMarker": "(^\\s*)?\\}",
