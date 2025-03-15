@@ -72,37 +72,62 @@
     {
       "comment": "preprocessor directives",
       "name": "keyword.control.preprocessor.mql5",
-      "match": "#\\b(property|resource|define|undef|include|import|ifdef|ifndef|else|endif)\\b"
+      "match": "#\\b(define|else|endif|ifdef|ifndef|import|include|package|property|resource|undef)\\b"
     },
     {
-      "comment": "access modifiers (specifiers)",
-      "name": "storage.modifier.mql5",
-      "match": "\\b(const|private|protected|public|virtual|export)\\b"
+      "comment": "unknown keywords",
+      "name": "keyword.other.unknown.mql5",
+      "match": "\\b(as|bitmap|defined|trash)\\b"
     },
     {
-      "comment": "memory classes",
-      "name": "storage.input.mql5",
-      "match": "\\b(extern|input|static|sinput)\\b"
+      "comment": "boolean",
+      "name": "constant.language.boolean.mql5",
+      "match": "\\b(true|false)\\b"
+    },
+    {
+      "comment": "data structures",
+      "name": "storage.type.data.mql5",
+      "match": "\\b(class|enum|export|inline|interface|namespace|struct|template|this|typedef|typename|union)\\b"
     },
     {
       "comment": "data types",
       "name": "storage.type.mql5",
-      "match": "\\b(void|bool|char|short|int|long|uchar|ushort|uint|ulong|double|float|string|color|datetime|enum|struct|class|interface)\\b"
+      "match": "\\b(bool|char|color|complex|complexf|datetime|double|float|int|long|matrix|matrix<complex>|matrix<complexf>|matrix<double>|matrix<float>|matrixc|matrixcf|matrixf|short|string|uchar|uint|ulong|ushort|unsigned|vector|vector<complex>|vector<complexf>|vector<double>|vector<float>|vectorc|vectorcf|vectorf|void)\\b"
+    },
+    {
+      "comment": "access modifiers (specifiers)",
+      "name": "storage.modifier.mql5",
+      "match": "\\b(const|delete|final|override|private|protected|public|virtual)\\b"
+    },
+    {
+      "comment": "memory classes",
+      "name": "storage.modifier.memory.mql5",
+      "match": "\\b(extern|group|input|sinput|static)\\b"
     },
     {
       "comment": "control operators",
       "name": "keyword.control.mql5",
-      "match": "\\b(return|if|else|for|while|do|break|continue|switch|case|default|new|delete)\\b"
+      "match": "\\b(break|case|continue|default|do|else|for|if|return|switch|while)\\b"
     },
     {
-      "comment": "other keywords",
+      "comment": "other operators",
       "name": "keyword.other.mql5",
-      "match": "\\b(operator|sizeof|this|template|typename|typedef|trash|defined|unsigned|dynamic_cast|override|final|pack|offsetof)\\b"
+      "match": "\\b(delete|dynamic_cast|new|offsetof|operator|pack|sizeof)\\b"
     },
     {
-      "comment": "defined macro constants",
-      "name": "keyword.other.mql5",
-      "match": "\\b(__COUNTER__|__CPU_ARCHITECTURE__|__DATETIME__|__DATE__|__FILE__|__FUNCSIG__|__FUNCTION__|__INCLUDE_LEVEL__|__LINE__|__MQL4BUILD__|__MQL5BUILD__|__MQL5__|__MQLBUILD__|__PATH__|__RANDOM__|__forceinline|__inline)\\b"
+      "comment": "predefined macro",
+      "name": "variable.language.macro.mql5",
+      "match": "\\b(__COUNTER__|__CPU_ARCHITECTURE__|__DATETIME__|__DATE__|__FILE__|__FUNCSIG__|__FUNCTION__|__INCLUDE_LEVEL__|__LINE__|__MQL4BUILD__|__MQL5BUILD__|__MQL5__|__MQLBUILD__|__MQL__|__PATH__|__RANDOM__|__forceinline|__inline)\\b"
+    },
+    {
+      "comment": "macro",
+      "name": "variable.language.macro.mql5",
+      "match": "\\b(_DEBUG|_RELEASE)\\b"
+    },
+    {
+      "comment": "predefined variables",
+      "name": "variable.language.predefined.mql5",
+      "match": "\\b(_AppliedTo|_CriticalError|_Digits|_IsX64|_LastError|_Period|_Point|_RandomSeed|_ReturnedDouble|_ReturnedFloat|_ReturnedString|_StopFlag|_Symbol|_UninitReason)\\b"
     },
     {
       "comment": "operators",
@@ -115,16 +140,25 @@
       "match": "\\(|\\)|\\[|\\]"
     },
     {
-      "include": "#builtin_functions"
+      "include": "#builtin_structs"
     },
     {
       "include": "#builtin_indicators"
     },
     {
-      "include": "#predefined_variables"
+      "include": "#builtin_functions"
     },
     {
-      "include": "#predefined_constants"
+      "include": "#builtin_colors"
+    },
+    {
+      "include": "#builtin_enums"
+    },
+    {
+      "include": "#builtin_errors"
+    },
+    {
+      "include": "#builtin_constants"
     },
     {
       "comment": "string constants",
@@ -199,12 +233,12 @@
         }
       ]
     },
-    "builtin_functions": {
+    "builtin_structs": {
       "patterns": [
         {
-          "comment": "MQL5 built-in functions and event handlers",
-          "name": "entity.name.function.mql5",
-          "match": "(?<!\\.)\\b()\\b"
+          "comment": "MQL5 built-in structs",
+          "name": "support.class.mql5",
+          "match": "\\b()\\b"
         }
       ]
     },
@@ -213,23 +247,50 @@
         {
           "comment": "MQL5 built-in indicators",
           "name": "support.function.mql5",
-          "match": "(?<!\\.)\\b()\\b"
-        }
-      ]
-    },
-    "predefined_variables": {
-      "patterns": [
-        {
-          "comment": "MQL5 predefined variables",
-          "name": "variable.language.predefined.mql5",
           "match": "\\b()\\b"
         }
       ]
     },
-    "predefined_constants": {
+    "builtin_functions": {
       "patterns": [
         {
-          "comment": "MQL5 predefined constants",
+          "comment": "MQL5 built-in functions",
+          "name": "entity.name.function.mql5",
+          "match": "\\b()\\b"
+        }
+      ]
+    },
+    "builtin_colors": {
+      "patterns": [
+        {
+          "comment": "MQL5 built-in colors",
+          "name": "support.constant.mql5",
+          "match": "\\b()\\b"
+        }
+      ]
+    },
+    "builtin_enums": {
+      "patterns": [
+        {
+          "comment": "MQL5 built-in enums",
+          "name": "support.class.mql5",
+          "match": "\\b()\\b"
+        }
+      ]
+    },
+    "builtin_errors": {
+      "patterns": [
+        {
+          "comment": "MQL5 built-in errors",
+          "name": "support.constant.mql5",
+          "match": "\\b()\\b"
+        }
+      ]
+    },
+    "builtin_constants": {
+      "patterns": [
+        {
+          "comment": "MQL5 built-in constants",
           "name": "support.constant.mql5",
           "match": "\\b()\\b"
         }

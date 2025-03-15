@@ -1,5 +1,18 @@
 // reserved keywords
 
+// preprocessor
+#define
+#else
+#endif
+#ifdef
+#ifndef
+#import
+#include
+#package
+#property
+#resource
+#undef
+
 // unknown
 as
 bitmap
@@ -77,38 +90,27 @@ input
 sinput
 static
 
-// operators
+// control operators
 break
 case
 continue
 default
-delete
 do
-dynamic_cast
 else
 for
 if
+return
+switch
+while
+
+// other operators
+delete
+dynamic_cast
 new
 offsetof
 operator
 pack
-return
 sizeof
-switch
-while
-
-// preprocessor
-#define
-#else
-#endif
-#ifdef
-#ifndef
-#import
-#include
-#package
-#property
-#resource
-#undef
 
 // predefined macros
 __COUNTER__
