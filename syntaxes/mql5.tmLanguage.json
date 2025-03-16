@@ -104,14 +104,7 @@
       "include": "#predefined_variables"
     },
     {
-      "comment": "operators",
-      "match": "=|\\+|\\-|<|>|!|\\*|/|%|&|\\||~|\\^|,|:|\\?|;",
-      "name": "punctuation.definition.operator.mql5"
-    },
-    {
-      "comment": "brackets",
-      "name": "punctuation.definition.brackets.mql5",
-      "match": "\\(|\\)|\\[|\\]"
+      "include": "#symbol_operators"
     },
     {
       "include": "#builtin_structs"
@@ -278,6 +271,15 @@
           "comment": "predefined variables",
           "name": "variable.language.predefined.mql5",
           "match": "\\b(_AppliedTo|_CriticalError|_Digits|_IsX64|_LastError|_Period|_Point|_RandomSeed|_ReturnedDouble|_ReturnedFloat|_ReturnedString|_StopFlag|_Symbol|_UninitReason)\\b"
+        }
+      ]
+    },
+    "symbol_operators": {
+      "patterns": [
+        {
+          "comment": "symbol operators",
+          "name": "punctuation.definition.operator.mql5",
+          "match": "\\+\\+|\\-\\-|\\+=|\\-=|\\*=|/=|%=|>>=|<<=|&=|\\|=|\\^=|==|!=|<=|>=|&&|\\|\\||\\+|\\-|\\*|/|%|<|>|!|~|>>|<<|&|\\||\\^|\\?|:"
         }
       ]
     },
