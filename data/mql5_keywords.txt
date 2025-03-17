@@ -1,6 +1,6 @@
 // reserved keywords
 
-// preprocessor
+// preprocessor directives
 #define
 #else
 #endif
@@ -13,7 +13,7 @@
 #resource
 #undef
 
-// unknown
+// unknown keywords
 as
 bitmap
 defined
@@ -23,7 +23,7 @@ trash
 false
 true
 
-// data structure
+// data structures
 class
 enum
 export
@@ -37,7 +37,7 @@ typedef
 typename
 union
 
-// data type
+// data types
 bool
 char
 color
@@ -83,7 +83,7 @@ protected
 public
 virtual
 
-// memory class
+// memory classes
 extern
 group
 input
