@@ -1,0 +1,6212 @@
+[
+  {
+    "name": "__DATE__",
+    "description": "File compilation date without time (hours, minutes and seconds are equal to 0)",
+    "usage": "Print"
+  },
+  {
+    "name": "__DATETIME__",
+    "description": "File compilation date and time",
+    "usage": "Print"
+  },
+  {
+    "name": "__FILE__",
+    "description": "Name of the currently compiled file",
+    "usage": "Print"
+  },
+  {
+    "name": "__FUNCSIG__",
+    "description": "Signature of the function in whose body the macro is located. Logging of the full description of functions can be useful in the identification of overloaded functions",
+    "usage": "Print"
+  },
+  {
+    "name": "__FUNCTION__",
+    "description": "Name of the function, in whose body the macro is located",
+    "usage": "Print"
+  },
+  {
+    "name": "__LINE__",
+    "description": "Line number in the source code, in which the macro is located",
+    "usage": "Print"
+  },
+  {
+    "name": "__MQLBUILD__, __MQL5BUILD__",
+    "description": "Compiler build number",
+    "usage": "Print"
+  },
+  {
+    "name": "__PATH__",
+    "description": "An absolute path to the file that is currently being compiled",
+    "usage": "Print"
+  },
+  {
+    "name": "ACCOUNT_ASSETS",
+    "description": "The current assets of an account",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_BALANCE",
+    "description": "Account balance in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_COMMISSION_BLOCKED",
+    "description": "The current blocked commission amount on an account",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_COMPANY",
+    "description": "Name of a company that serves the account",
+    "usage": "AccountInfoString"
+  },
+  {
+    "name": "ACCOUNT_CREDIT",
+    "description": "Account credit in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_CURRENCY",
+    "description": "Account currency",
+    "usage": "AccountInfoString"
+  },
+  {
+    "name": "ACCOUNT_EQUITY",
+    "description": "Account equity in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_LEVERAGE",
+    "description": "Account leverage",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_LIABILITIES",
+    "description": "The current liabilities on an account",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_LIMIT_ORDERS",
+    "description": "Maximum allowed number of active pending orders",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_LOGIN",
+    "description": "Account number",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_MARGIN",
+    "description": "Account margin used in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_MARGIN_FREE",
+    "description": "Free margin of an account in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_MARGIN_INITIAL",
+    "description": "",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_MARGIN_LEVEL",
+    "description": "Account margin level in percents",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_MARGIN_MAINTENANCE",
+    "description": "Maintenance margin. The minimum equity reserved on an account to cover the minimum amount of all open positions",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_MARGIN_SO_CALL",
+    "description": "Margin call level. Depending on the set ACCOUNT_MARGIN_SO_MODE is expressed in percents or in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_MARGIN_SO_MODE",
+    "description": "Mode for setting the minimal allowed margin",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_MARGIN_SO_SO",
+    "description": "Margin stop out level. Depending on the set ACCOUNT_MARGIN_SO_MODE is expressed in percents or in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_NAME",
+    "description": "Client name",
+    "usage": "AccountInfoString"
+  },
+  {
+    "name": "ACCOUNT_PROFIT",
+    "description": "Current profit of an account in the deposit currency",
+    "usage": "AccountInfoDouble"
+  },
+  {
+    "name": "ACCOUNT_SERVER",
+    "description": "Trade server name",
+    "usage": "AccountInfoString"
+  },
+  {
+    "name": "ACCOUNT_STOPOUT_MODE_MONEY",
+    "description": "Account stop out mode in money",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_STOPOUT_MODE_PERCENT",
+    "description": "Account stop out mode in percents",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_TRADE_ALLOWED",
+    "description": "Allowed trade for the current account",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_TRADE_EXPERT",
+    "description": "Allowed trade for an Expert Advisor",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_TRADE_MODE",
+    "description": "Account trade mode",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_TRADE_MODE_CONTEST",
+    "description": "Contest account",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_TRADE_MODE_DEMO",
+    "description": "Demo account",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ACCOUNT_TRADE_MODE_REAL",
+    "description": "Real account",
+    "usage": "AccountInfoInteger"
+  },
+  {
+    "name": "ALIGN_CENTER",
+    "description": "Centered (only for the Edit object)",
+    "usage": "ObjectSetInteger, ObjectGetInteger, ChartScreenShot"
+  },
+  {
+    "name": "ALIGN_LEFT",
+    "description": "Left alignment",
+    "usage": "ObjectSetInteger, ObjectGetInteger, ChartScreenShot"
+  },
+  {
+    "name": "ALIGN_RIGHT",
+    "description": "Right alignment",
+    "usage": "ObjectSetInteger, ObjectGetInteger, ChartScreenShot"
+  },
+  {
+    "name": "ANCHOR_CENTER",
+    "description": "Anchor point strictly in the center of the object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_LEFT",
+    "description": "Anchor point to the left in the center",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_LEFT_LOWER",
+    "description": "Anchor point at the lower left corner",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_LEFT_UPPER",
+    "description": "Anchor point at the upper left corner",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_LOWER",
+    "description": "Anchor point below in the center",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_RIGHT",
+    "description": "Anchor point to the right in the center",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_RIGHT_LOWER",
+    "description": "Anchor point at the lower right corner",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_RIGHT_UPPER",
+    "description": "Anchor point at the upper right corner",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ANCHOR_UPPER",
+    "description": "Anchor point above in the center",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "BASE_LINE",
+    "description": "Main line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "BOOK_TYPE_BUY",
+    "description": "Buy order (Bid)",
+    "usage": "MqlBookInfo"
+  },
+  {
+    "name": "BOOK_TYPE_BUY_MARKET",
+    "description": "Buy order by Market",
+    "usage": "MqlBookInfo"
+  },
+  {
+    "name": "BOOK_TYPE_SELL",
+    "description": "Sell order (Offer)",
+    "usage": "MqlBookInfo"
+  },
+  {
+    "name": "BOOK_TYPE_SELL_MARKET",
+    "description": "Sell order by Market",
+    "usage": "MqlBookInfo"
+  },
+  {
+    "name": "BORDER_FLAT",
+    "description": "Flat form",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "BORDER_RAISED",
+    "description": "Prominent form",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "BORDER_SUNKEN",
+    "description": "Concave form",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "CHAR_MAX",
+    "description": "Maximal value, which can be represented by char type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "CHAR_MIN",
+    "description": "Minimal value, which can be represented by char type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "CHART_AUTOSCROLL",
+    "description": "Mode of automatic moving to the right border of the chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_BARS",
+    "description": "Display as a sequence of bars",
+    "usage": "ChartSetInteger"
+  },
+  {
+    "name": "CHART_BEGIN",
+    "description": "Chart beginning (the oldest prices)",
+    "usage": "ChartNavigate"
+  },
+  {
+    "name": "CHART_BRING_TO_TOP",
+    "description": "Show chart on top of other charts",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_CANDLES",
+    "description": "Display as Japanese candlesticks",
+    "usage": "ChartSetInteger"
+  },
+  {
+    "name": "CHART_COLOR_ASK",
+    "description": "Ask price level color",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_BACKGROUND",
+    "description": "Chart background color",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_BID",
+    "description": "Bid price level color",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_CANDLE_BEAR",
+    "description": "Body color of a bear candlestick",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_CANDLE_BULL",
+    "description": "Body color of a bull candlestick",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_CHART_DOWN",
+    "description": "Color for the down bar, shadows and body borders of bear candlesticks",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_CHART_LINE",
+    "description": "Line chart color and color of \"Doji\" Japanese candlesticks",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_CHART_UP",
+    "description": "Color for the up bar, shadows and body borders of bull candlesticks",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_FOREGROUND",
+    "description": "Color of axes, scales and OHLC line",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_GRID",
+    "description": "Grid color",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_LAST",
+    "description": "Line color of the last executed deal price (Last)",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_STOP_LEVEL",
+    "description": "Color of stop order levels (Stop Loss and Take Profit)",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COLOR_VOLUME",
+    "description": "Color of volumes and position opening levels",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_COMMENT",
+    "description": "Text of a comment in a chart",
+    "usage": "ChartSetString, ChartGetString"
+  },
+  {
+    "name": "CHART_CURRENT_POS",
+    "description": "Current position",
+    "usage": "ChartNavigate"
+  },
+  {
+    "name": "CHART_DRAG_TRADE_LEVELS",
+    "description": "Permission to drag trading levels on a chart with a mouse. The drag mode is enabled by default (true value)",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_EVENT_MOUSE_MOVE",
+    "description": "Send notifications of mouse move and mouse click events (CHARTEVENT_MOUSE_MOVE) to all mql5 programs on a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_EVENT_OBJECT_CREATE",
+    "description": "Send a notification of an event of new object creation (CHARTEVENT_OBJECT_CREATE) to all mql5-programs on a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_EVENT_OBJECT_DELETE",
+    "description": "Send a notification of an event of object deletion (CHARTEVENT_OBJECT_DELETE) to all mql5-programs on a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_FIRST_VISIBLE_BAR",
+    "description": "Number of the first visible bar in the chart. Indexing of bars is the same as for timeseries.",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_FIXED_MAX",
+    "description": "Fixed chart maximum",
+    "usage": "ChartSetDouble, ChartGetDouble"
+  },
+  {
+    "name": "CHART_FIXED_MIN",
+    "description": "Fixed chart minimum",
+    "usage": "ChartSetDouble, ChartGetDouble"
+  },
+  {
+    "name": "CHART_FIXED_POSITION",
+    "description": "Chart fixed position from the left border in percent value. Chart fixed position is marked by a small gray triangle on the horizontal time axis. It is displayed only if the automatic chart scrolling to the right on tick incoming is disabled (see CHART_AUTOSCROLL property). The bar on a fixed position remains in the same place when zooming in and out.",
+    "usage": "ChartSetDouble, ChartGetDouble"
+  },
+  {
+    "name": "CHART_FOREGROUND",
+    "description": "Price chart in the foreground",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_HEIGHT_IN_PIXELS",
+    "description": "Chart height in pixels",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_IS_OBJECT",
+    "description": "Identifying \"Chart\" (OBJ_CHART) object – returns true for a graphical object. Returns false for a real chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_LINE",
+    "description": "Display as a line drawn by Close prices",
+    "usage": "ChartSetInteger"
+  },
+  {
+    "name": "CHART_MODE",
+    "description": "Chart type (candlesticks, bars or line)",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_MOUSE_SCROLL",
+    "description": "Scrolling the chart horizontally using the left mouse button. Vertical scrolling is also available if the value of any following properties is set to true: CHART_SCALEFIX, CHART_SCALEFIX_11 or CHART_SCALE_PT_PER_BAR",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_POINTS_PER_BAR",
+    "description": "Scale in points per bar",
+    "usage": "ChartSetDouble, ChartGetDouble"
+  },
+  {
+    "name": "CHART_PRICE_MAX",
+    "description": "Chart maximum",
+    "usage": "ChartSetDouble, ChartGetDouble"
+  },
+  {
+    "name": "CHART_PRICE_MIN",
+    "description": "Chart minimum",
+    "usage": "ChartSetDouble, ChartGetDouble"
+  },
+  {
+    "name": "CHART_SCALE",
+    "description": "Scale",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SCALE_PT_PER_BAR",
+    "description": "Scale to be specified in points per bar",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SCALEFIX",
+    "description": "Fixed scale mode",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SCALEFIX_11",
+    "description": "Scale 1:1 mode",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHIFT",
+    "description": "Mode of price chart indent from the right border",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHIFT_SIZE",
+    "description": "The size of the zero bar indent from the right border in percents",
+    "usage": "ChartSetDouble, ChartGetDouble"
+  },
+  {
+    "name": "CHART_SHOW_ASK_LINE",
+    "description": "Display Ask values as a horizontal line in a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_BID_LINE",
+    "description": "Display Bid values as a horizontal line in a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_DATE_SCALE",
+    "description": "Showing the time scale on a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_GRID",
+    "description": "Display grid in the chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_LAST_LINE",
+    "description": "Display Last values as a horizontal line in a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_OBJECT_DESCR",
+    "description": "Pop-up descriptions of graphical objects",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_OHLC",
+    "description": "Show OHLC values in the upper left corner",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_ONE_CLICK",
+    "description": "Showing the \"One click trading\" panel on a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_PERIOD_SEP",
+    "description": "Display vertical separators between adjacent periods",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_PRICE_SCALE",
+    "description": "Showing the price scale on a chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_TRADE_LEVELS",
+    "description": "Displaying trade levels in the chart (levels of open positions, Stop Loss, Take Profit and pending orders)",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_SHOW_VOLUMES",
+    "description": "Display volume in the chart",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_VISIBLE_BARS",
+    "description": "The number of bars on the chart that can be displayed",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_VOLUME_HIDE",
+    "description": "Volumes are not shown",
+    "usage": "ChartSetInteger"
+  },
+  {
+    "name": "CHART_VOLUME_REAL",
+    "description": "Trade volumes",
+    "usage": "ChartSetInteger"
+  },
+  {
+    "name": "CHART_VOLUME_TICK",
+    "description": "Tick volumes",
+    "usage": "ChartSetInteger"
+  },
+  {
+    "name": "CHART_WIDTH_IN_BARS",
+    "description": "Chart width in bars",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_WIDTH_IN_PIXELS",
+    "description": "Chart width in pixels",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_WINDOW_HANDLE",
+    "description": "Chart window handle (HWND)",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_WINDOW_IS_VISIBLE",
+    "description": "Visibility of subwindows",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_WINDOW_YDISTANCE",
+    "description": "The distance between the upper frame of the indicator subwindow and the upper frame of the main chart window, along the vertical Y axis, in pixels. In case of a mouse event, the cursor coordinates are passed in terms of the coordinates of the main chart window, while the coordinates of graphical objects in an indicator subwindow are set relative to the upper left corner of the subwindow.",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHART_WINDOWS_TOTAL",
+    "description": "The total number of chart windows, including indicator subwindows",
+    "usage": "ChartSetInteger, ChartGetInteger"
+  },
+  {
+    "name": "CHARTEVENT_CHART_CHANGE",
+    "description": "Change of the chart size or modification of chart properties through the Properties dialog",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_CLICK",
+    "description": "Clicking on a chart",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_CUSTOM",
+    "description": "Initial number of an event from a range of custom events",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_CUSTOM_LAST",
+    "description": "The final number of an event from a range of custom events",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_KEYDOWN",
+    "description": "Keystrokes",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_MOUSE_MOVE",
+    "description": "Mouse move, mouse clicks (if CHART_EVENT_MOUSE_MOVE=true is set for the chart)",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_OBJECT_CHANGE",
+    "description": "Graphical object property changed via the properties dialog",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_OBJECT_CLICK",
+    "description": "Clicking on a graphical object",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_OBJECT_CREATE",
+    "description": "Graphical object created (if CHART_EVENT_OBJECT_CREATE=true is set for the chart)",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_OBJECT_DELETE",
+    "description": "Graphical object deleted (if CHART_EVENT_OBJECT_DELETE=true is set for the chart)",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_OBJECT_DRAG",
+    "description": "Drag and drop of a graphical object",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTEVENT_OBJECT_ENDEDIT",
+    "description": "End of text editing in the graphical object Edit",
+    "usage": "OnChartEvent"
+  },
+  {
+    "name": "CHARTS_MAX",
+    "description": "The maximum possible number of simultaneously open charts in the terminal",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "CHIKOUSPAN_LINE",
+    "description": "Chikou Span line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "clrAliceBlue",
+    "description": "Alice Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrAntiqueWhite",
+    "description": "Antique White",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrAqua",
+    "description": "Aqua",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrAquamarine",
+    "description": "Aquamarine",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBeige",
+    "description": "Beige",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBisque",
+    "description": "Bisque",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBlack",
+    "description": "Black",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBlanchedAlmond",
+    "description": "Blanched Almond",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBlue",
+    "description": "Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBlueViolet",
+    "description": "Blue Violet",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBrown",
+    "description": "Brown",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrBurlyWood",
+    "description": "Burly Wood",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrCadetBlue",
+    "description": "Cadet Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrChartreuse",
+    "description": "Chartreuse",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrChocolate",
+    "description": "Chocolate",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrCoral",
+    "description": "Coral",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrCornflowerBlue",
+    "description": "Cornflower Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrCornsilk",
+    "description": "Cornsilk",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrCrimson",
+    "description": "Crimson",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkBlue",
+    "description": "Dark Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkGoldenrod",
+    "description": "Dark Goldenrod",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkGray",
+    "description": "Dark Gray",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkGreen",
+    "description": "Dark Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkKhaki",
+    "description": "Dark Khaki",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkOliveGreen",
+    "description": "Dark Olive Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkOrange",
+    "description": "Dark Orange",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkOrchid",
+    "description": "Dark Orchid",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkSalmon",
+    "description": "Dark Salmon",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkSeaGreen",
+    "description": "Dark Sea Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkSlateBlue",
+    "description": "Dark Slate Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkSlateGray",
+    "description": "Dark Slate Gray",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkTurquoise",
+    "description": "Dark Turquoise",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDarkViolet",
+    "description": "Dark Violet",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDeepPink",
+    "description": "Deep Pink",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDeepSkyBlue",
+    "description": "Deep Sky Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDimGray",
+    "description": "Dim Gray",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrDodgerBlue",
+    "description": "Dodger Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrFireBrick",
+    "description": "Fire Brick",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrForestGreen",
+    "description": "Forest Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrGainsboro",
+    "description": "Gainsboro",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrGold",
+    "description": "Gold",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrGoldenrod",
+    "description": "Goldenrod",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrGray",
+    "description": "Gray",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrGreen",
+    "description": "Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrGreenYellow",
+    "description": "Green Yellow",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrHoneydew",
+    "description": "Honeydew",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrHotPink",
+    "description": "Hot Pink",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrIndianRed",
+    "description": "Indian Red",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrIndigo",
+    "description": "Indigo",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrIvory",
+    "description": "Ivory",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrKhaki",
+    "description": "Khaki",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLavender",
+    "description": "Lavender",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLavenderBlush",
+    "description": "Lavender Blush",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLawnGreen",
+    "description": "Lawn Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLemonChiffon",
+    "description": "Lemon Chiffon",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightBlue",
+    "description": "Light Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightCoral",
+    "description": "Light Coral",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightCyan",
+    "description": "Light Cyan",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightGoldenrod",
+    "description": "Light Goldenrod",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightGray",
+    "description": "Light Gray",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightGreen",
+    "description": "Light Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightPink",
+    "description": "Light Pink",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightSalmon",
+    "description": "Light Salmon",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightSeaGreen",
+    "description": "Light Sea Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightSkyBlue",
+    "description": "Light Sky Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightSlateGray",
+    "description": "Light Slate Gray",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightSteelBlue",
+    "description": "Light Steel Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLightYellow",
+    "description": "Light Yellow",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLime",
+    "description": "Lime",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLimeGreen",
+    "description": "Lime Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrLinen",
+    "description": "Linen",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMagenta",
+    "description": "Magenta",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMaroon",
+    "description": "Maroon",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumAquamarine",
+    "description": "Medium Aquamarine",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumBlue",
+    "description": "Medium Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumOrchid",
+    "description": "Medium Orchid",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumPurple",
+    "description": "Medium Purple",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumSeaGreen",
+    "description": "Medium Sea Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumSlateBlue",
+    "description": "Medium Slate Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumSpringGreen",
+    "description": "Medium Spring Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumTurquoise",
+    "description": "Medium Turquoise",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMediumVioletRed",
+    "description": "Medium Violet Red",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMidnightBlue",
+    "description": "Midnight Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMintCream",
+    "description": "Mint Cream",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMistyRose",
+    "description": "Misty Rose",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrMoccasin",
+    "description": "Moccasin",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrNavajoWhite",
+    "description": "Navajo White",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrNavy",
+    "description": "Navy",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrNONE",
+    "description": "Absence of color",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "clrOldLace",
+    "description": "Old Lace",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrOlive",
+    "description": "Olive",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrOliveDrab",
+    "description": "Olive Drab",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrOrange",
+    "description": "Orange",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrOrangeRed",
+    "description": "Orange Red",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrOrchid",
+    "description": "Orchid",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPaleGoldenrod",
+    "description": "Pale Goldenrod",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPaleGreen",
+    "description": "Pale Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPaleTurquoise",
+    "description": "Pale Turquoise",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPaleVioletRed",
+    "description": "Pale Violet Red",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPapayaWhip",
+    "description": "Papaya Whip",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPeachPuff",
+    "description": "Peach Puff",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPeru",
+    "description": "Peru",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPink",
+    "description": "Pink",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPlum",
+    "description": "Plum",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPowderBlue",
+    "description": "Powder Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrPurple",
+    "description": "Purple",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrRed",
+    "description": "Red",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrRosyBrown",
+    "description": "Rosy Brown",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrRoyalBlue",
+    "description": "Royal Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSaddleBrown",
+    "description": "Saddle Brown",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSalmon",
+    "description": "Salmon",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSandyBrown",
+    "description": "Sandy Brown",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSeaGreen",
+    "description": "Sea Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSeashell",
+    "description": "Seashell",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSienna",
+    "description": "Sienna",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSilver",
+    "description": "Silver",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSkyBlue",
+    "description": "Sky Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSlateBlue",
+    "description": "Slate Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSlateGray",
+    "description": "Slate Gray",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSnow",
+    "description": "Snow",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSpringGreen",
+    "description": "Spring Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrSteelBlue",
+    "description": "Steel Blue",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrTan",
+    "description": "Tan",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrTeal",
+    "description": "Teal",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrThistle",
+    "description": "Thistle",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrTomato",
+    "description": "Tomato",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrTurquoise",
+    "description": "Turquoise",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrViolet",
+    "description": "Violet",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrWheat",
+    "description": "Wheat",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrWhite",
+    "description": "White",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrWhiteSmoke",
+    "description": "White Smoke",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrYellow",
+    "description": "Yellow",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "clrYellowGreen",
+    "description": "Yellow Green",
+    "usage": "Web Colors"
+  },
+  {
+    "name": "CORNER_LEFT_LOWER",
+    "description": "Center of coordinates is in the lower left corner of the chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "CORNER_LEFT_UPPER",
+    "description": "Center of coordinates is in the upper left corner of the chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "CORNER_RIGHT_LOWER",
+    "description": "Center of coordinates is in the lower right corner of the chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "CORNER_RIGHT_UPPER",
+    "description": "Center of coordinates is in the upper right corner of the chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "CP_ACP",
+    "description": "The current Windows ANSI code page.",
+    "usage": "CharArrayToString, StringToCharArray, FileOpen"
+  },
+  {
+    "name": "CP_MACCP",
+    "description": "The current system Macintosh code page.",
+    "usage": "CharArrayToString, StringToCharArray, FileOpen"
+  },
+  {
+    "name": "CP_OEMCP",
+    "description": "The current system OEM code page.",
+    "usage": "CharArrayToString, StringToCharArray, FileOpen"
+  },
+  {
+    "name": "CP_SYMBOL",
+    "description": "Symbol code page",
+    "usage": "CharArrayToString, StringToCharArray, FileOpen"
+  },
+  {
+    "name": "CP_THREAD_ACP",
+    "description": "The Windows ANSI code page for the current thread.",
+    "usage": "CharArrayToString, StringToCharArray, FileOpen"
+  },
+  {
+    "name": "CP_UTF7",
+    "description": "UTF-7 code page.",
+    "usage": "CharArrayToString, StringToCharArray, FileOpen"
+  },
+  {
+    "name": "CP_UTF8",
+    "description": "UTF-8 code page.",
+    "usage": "CharArrayToString, StringToCharArray, FileOpen"
+  },
+  {
+    "name": "CRYPT_AES128",
+    "description": "AES encryption with 128 bit key (16 bytes)",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "CRYPT_AES256",
+    "description": "AES encryption with 256 bit key (32 bytes)",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "CRYPT_ARCH_ZIP",
+    "description": "ZIP archives",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "CRYPT_BASE64",
+    "description": "BASE64",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "CRYPT_DES",
+    "description": "DES encryption with 56 bit key (7 bytes)",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "CRYPT_HASH_MD5",
+    "description": "MD5 HASH calculation",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "CRYPT_HASH_SHA1",
+    "description": "SHA1 HASH calculation",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "CRYPT_HASH_SHA256",
+    "description": "SHA256 HASH calculation",
+    "usage": "CryptEncode, CryptDecode"
+  },
+  {
+    "name": "DBL_DIG",
+    "description": "Number of significant decimal digits for double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_EPSILON",
+    "description": "Minimal value, which satisfies the condition:",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_MANT_DIG",
+    "description": "Bits count in a mantissa for double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_MAX",
+    "description": "Maximal value, which can be represented by double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_MAX_10_EXP",
+    "description": "Maximal decimal value of exponent degree for double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_MAX_EXP",
+    "description": "Maximal binary value of exponent degree for double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_MIN",
+    "description": "Minimal positive value, which can be represented by double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_MIN_10_EXP",
+    "description": "Minimal decimal value of exponent degree for double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DBL_MIN_EXP",
+    "description": "Minimal binary value of exponent degree for double type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "DEAL_COMMENT",
+    "description": "Deal comment",
+    "usage": "HistoryDealGetString"
+  },
+  {
+    "name": "DEAL_COMMISSION",
+    "description": "Deal commission",
+    "usage": "HistoryDealGetDouble"
+  },
+  {
+    "name": "DEAL_ENTRY",
+    "description": "Deal entry - entry in, entry out, reverse",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_ENTRY_IN",
+    "description": "Entry in",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_ENTRY_INOUT",
+    "description": "Reverse",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_ENTRY_OUT",
+    "description": "Entry out",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_MAGIC",
+    "description": "Deal magic number (see ORDER_MAGIC)",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_ORDER",
+    "description": "Deal order number",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_POSITION_ID",
+    "description": "Identifier of a position, in the opening, modification or change of which this deal took part. Each position has a unique identifier that is assigned to all deals executed for the symbol during the entire lifetime of the position.",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_PRICE",
+    "description": "Deal price",
+    "usage": "HistoryDealGetDouble"
+  },
+  {
+    "name": "DEAL_PROFIT",
+    "description": "Deal profit",
+    "usage": "HistoryDealGetDouble"
+  },
+  {
+    "name": "DEAL_SWAP",
+    "description": "Cumulative swap on close",
+    "usage": "HistoryDealGetDouble"
+  },
+  {
+    "name": "DEAL_SYMBOL",
+    "description": "Deal symbol",
+    "usage": "HistoryDealGetString"
+  },
+  {
+    "name": "DEAL_TIME",
+    "description": "Deal time",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TIME_MSC",
+    "description": "The time of a deal execution in milliseconds since 01.01.1970",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE",
+    "description": "Deal type",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_BALANCE",
+    "description": "Balance",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_BONUS",
+    "description": "Bonus",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_BUY",
+    "description": "Buy",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_BUY_CANCELED",
+    "description": "Canceled buy deal. There can be a situation when a previously executed buy deal is canceled. In this case, the type of the previously executed deal (DEAL_TYPE_BUY) is changed to DEAL_TYPE_BUY_CANCELED, and its profit/loss is zeroized. Previously obtained profit/loss is charged/withdrawn using a separated balance operation",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_CHARGE",
+    "description": "Additional charge",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_COMMISSION",
+    "description": "Additional commission",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_COMMISSION_AGENT_DAILY",
+    "description": "Daily agent commission",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_COMMISSION_AGENT_MONTHLY",
+    "description": "Monthly agent commission",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_COMMISSION_DAILY",
+    "description": "Daily commission",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_COMMISSION_MONTHLY",
+    "description": "Monthly commission",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_CORRECTION",
+    "description": "Correction",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_CREDIT",
+    "description": "Credit",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_INTEREST",
+    "description": "Interest rate",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_SELL",
+    "description": "Sell",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_TYPE_SELL_CANCELED",
+    "description": "Canceled sell deal. There can be a situation when a previously executed sell deal is canceled. In this case, the type of the previously executed deal (DEAL_TYPE_SELL) is changed to DEAL_TYPE_SELL_CANCELED, and its profit/loss is zeroized. Previously obtained profit/loss is charged/withdrawn using a separated balance operation",
+    "usage": "HistoryDealGetInteger"
+  },
+  {
+    "name": "DEAL_VOLUME",
+    "description": "Deal volume",
+    "usage": "HistoryDealGetDouble"
+  },
+  {
+    "name": "DRAW_ARROW",
+    "description": "Drawing arrows",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_BARS",
+    "description": "Display as a sequence of bars",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_CANDLES",
+    "description": "Display as a sequence of candlesticks",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_ARROW",
+    "description": "Drawing multicolored arrows",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_BARS",
+    "description": "Multicolored bars",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_CANDLES",
+    "description": "Multicolored candlesticks",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_HISTOGRAM",
+    "description": "Multicolored histogram from the zero line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_HISTOGRAM2",
+    "description": "Multicolored histogram of the two indicator buffers",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_LINE",
+    "description": "Multicolored line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_SECTION",
+    "description": "Multicolored section",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_COLOR_ZIGZAG",
+    "description": "Multicolored ZigZag",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_FILLING",
+    "description": "Color fill between the two levels",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_HISTOGRAM",
+    "description": "Histogram from the zero line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_HISTOGRAM2",
+    "description": "Histogram of the two indicator buffers",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_LINE",
+    "description": "Line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_NONE",
+    "description": "Not drawn",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_SECTION",
+    "description": "Section",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "DRAW_ZIGZAG",
+    "description": "Style Zigzag allows vertical section on the bar",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "ELLIOTT_CYCLE",
+    "description": "Cycle",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_GRAND_SUPERCYCLE",
+    "description": "Grand Supercycle",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_INTERMEDIATE",
+    "description": "Intermediate",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_MINOR",
+    "description": "Minor",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_MINUETTE",
+    "description": "Minuette",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_MINUTE",
+    "description": "Minute",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_PRIMARY",
+    "description": "Primary",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_SUBMINUETTE",
+    "description": "Subminuette",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ELLIOTT_SUPERCYCLE",
+    "description": "Supercycle",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "EMPTY_VALUE",
+    "description": "Empty value in an indicator buffer",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "ERR_ACCOUNT_WRONG_PROPERTY",
+    "description": "Wrong account property ID",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_ARRAY_BAD_SIZE",
+    "description": "Requested array size exceeds 2 GB",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_ARRAY_RESIZE_ERROR",
+    "description": "Not enough memory for the relocation of an array, or an attempt to change the size of a static array",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_BOOKS_CANNOT_ADD",
+    "description": "Depth Of Market can not be added",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_BOOKS_CANNOT_DELETE",
+    "description": "Depth Of Market can not be removed",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_BOOKS_CANNOT_GET",
+    "description": "The data from Depth Of Market can not be obtained",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_BOOKS_CANNOT_SUBSCRIBE",
+    "description": "Error in subscribing to receive new data from Depth Of Market",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_BUFFERS_NO_MEMORY",
+    "description": "Not enough memory for the distribution of indicator buffers",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_BUFFERS_WRONG_INDEX",
+    "description": "Wrong indicator buffer index",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CANNOT_CLEAN_DIRECTORY",
+    "description": "Failed to clear the directory (probably one or more files are blocked and removal operation failed)",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CANNOT_DELETE_DIRECTORY",
+    "description": "The directory cannot be removed",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CANNOT_DELETE_FILE",
+    "description": "File deleting error",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CANNOT_OPEN_FILE",
+    "description": "File opening error",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHAR_ARRAY_ONLY",
+    "description": "Must be an array of type char",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_CANNOT_CHANGE",
+    "description": "Failed to change chart symbol and period",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_CANNOT_CREATE_TIMER",
+    "description": "Failed to create timer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_CANNOT_OPEN",
+    "description": "Chart opening error",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_INDICATOR_CANNOT_ADD",
+    "description": "Error adding an indicator to chart",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_INDICATOR_CANNOT_DEL",
+    "description": "Error deleting an indicator from the chart",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_INDICATOR_NOT_FOUND",
+    "description": "Indicator not found on the specified chart",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_NAVIGATE_FAILED",
+    "description": "Error navigating through chart",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_NO_EXPERT",
+    "description": "No Expert Advisor in the chart that could handle the event",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_NO_REPLY",
+    "description": "Chart does not respond",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_NOT_FOUND",
+    "description": "Chart not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_SCREENSHOT_FAILED",
+    "description": "Error creating screenshots",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_TEMPLATE_FAILED",
+    "description": "Error applying template",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_WINDOW_NOT_FOUND",
+    "description": "Subwindow containing the indicator was not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_WRONG_ID",
+    "description": "Wrong chart ID",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_WRONG_PARAMETER",
+    "description": "Error value of the parameter for the function of working with charts",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CHART_WRONG_PROPERTY",
+    "description": "Wrong chart property ID",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_CUSTOM_WRONG_PROPERTY",
+    "description": "Wrong ID of the custom indicator property",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_DIRECTORY_NOT_EXIST",
+    "description": "Directory does not exist",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_DOUBLE_ARRAY_ONLY",
+    "description": "Must be an array of type double",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_BINSTRINGSIZE",
+    "description": "String size must be specified, because the file is opened as binary",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_CACHEBUFFER_ERROR",
+    "description": "Not enough memory for cache to read",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_CANNOT_REWRITE",
+    "description": "File can not be rewritten",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_IS_DIRECTORY",
+    "description": "This is not a file, this is a directory",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_ISNOT_DIRECTORY",
+    "description": "This is a file, not a directory",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_NOT_EXIST",
+    "description": "File does not exist",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_NOTBIN",
+    "description": "The file must be opened as a binary one",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_NOTCSV",
+    "description": "The file must be opened as CSV",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_NOTTOREAD",
+    "description": "The file must be opened for reading",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_NOTTOWRITE",
+    "description": "The file must be opened for writing",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_NOTTXT",
+    "description": "The file must be opened as a text",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_NOTTXTORCSV",
+    "description": "The file must be opened as a text or CSV",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_READERROR",
+    "description": "File reading error",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FILE_WRITEERROR",
+    "description": "Failed to write a resource to a file",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FLOAT_ARRAY_ONLY",
+    "description": "Must be an array of type float",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FTP_SEND_FAILED",
+    "description": "File sending via ftp failed",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_FUNCTION_NOT_ALLOWED",
+    "description": "Function is not allowed for call",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_GLOBALVARIABLE_EXISTS",
+    "description": "Global variable of the client terminal with the same name already exists",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_GLOBALVARIABLE_NOT_FOUND",
+    "description": "Global variable of the client terminal is not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_HISTORY_NOT_FOUND",
+    "description": "Requested history not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_HISTORY_WRONG_PROPERTY",
+    "description": "Wrong ID of the history property",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INCOMPATIBLE_ARRAYS",
+    "description": "Copying incompatible arrays. String array can be copied only to a string array, and a numeric array - in numeric array only",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INCOMPATIBLE_FILE",
+    "description": "A text file must be for string arrays, for other arrays - binary",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_CANNOT_ADD",
+    "description": "Error applying an indicator to chart",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_CANNOT_APPLY",
+    "description": "The indicator cannot be applied to another indicator",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_CANNOT_CREATE",
+    "description": "Indicator cannot be created",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_CUSTOM_NAME",
+    "description": "The first parameter in the array must be the name of the custom indicator",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_DATA_NOT_FOUND",
+    "description": "Requested data not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_NO_MEMORY",
+    "description": "Not enough memory to add the indicator",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_PARAMETER_TYPE",
+    "description": "Invalid parameter type in the array when creating an indicator",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_PARAMETERS_MISSING",
+    "description": "No parameters when creating an indicator",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_UNKNOWN_SYMBOL",
+    "description": "Unknown symbol",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_WRONG_HANDLE",
+    "description": "Wrong indicator handle",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_WRONG_INDEX",
+    "description": "Wrong index of the requested indicator buffer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INDICATOR_WRONG_PARAMETERS",
+    "description": "Wrong number of parameters when creating an indicator",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INT_ARRAY_ONLY",
+    "description": "Must be an array of type int",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INTERNAL_ERROR",
+    "description": "Unexpected internal error",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INVALID_ARRAY",
+    "description": "Array of a wrong type, wrong size, or a damaged object of a dynamic array",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INVALID_DATETIME",
+    "description": "Invalid date and/or time",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INVALID_FILEHANDLE",
+    "description": "A file with this handle was closed, or was not opening at all",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INVALID_PARAMETER",
+    "description": "Wrong parameter when calling the system function",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INVALID_POINTER",
+    "description": "Wrong pointer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_INVALID_POINTER_TYPE",
+    "description": "Wrong type of pointer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_LONG_ARRAY_ONLY",
+    "description": "Must be an array of type long",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_MAIL_SEND_FAILED",
+    "description": "Email sending failed",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_MARKET_LASTTIME_UNKNOWN",
+    "description": "Time of the last tick is not known (no ticks)",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_MARKET_NOT_SELECTED",
+    "description": "Symbol is not selected in MarketWatch",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_MARKET_SELECT_ERROR",
+    "description": "Error adding or deleting a symbol in MarketWatch",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_MARKET_UNKNOWN_SYMBOL",
+    "description": "Unknown symbol",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_MARKET_WRONG_PROPERTY",
+    "description": "Wrong identifier of a symbol property",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_MQL5_WRONG_PROPERTY",
+    "description": "Wrong identifier of the program property",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NO_STRING_DATE",
+    "description": "No date in the string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NOT_ENOUGH_MEMORY",
+    "description": "Not enough memory to perform the system function",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NOTIFICATION_SEND_FAILED",
+    "description": "Failed to send a notification",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NOTIFICATION_TOO_FREQUENT",
+    "description": "Too frequent sending of notifications",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NOTIFICATION_WRONG_PARAMETER",
+    "description": "Invalid parameter for sending a notification – an empty string or NULL has been passed to the SendNotification() function",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NOTIFICATION_WRONG_SETTINGS",
+    "description": "Wrong settings of notifications in the terminal (ID is not specified or permission is not set)",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NOTINITIALIZED_STRING",
+    "description": "Not initialized string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_NUMBER_ARRAYS_ONLY",
+    "description": "Must be a numeric array",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OBJECT_ERROR",
+    "description": "Error working with a graphical object",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OBJECT_GETDATE_FAILED",
+    "description": "Unable to get date corresponding to the value",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OBJECT_GETVALUE_FAILED",
+    "description": "Unable to get value corresponding to the date",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OBJECT_NOT_FOUND",
+    "description": "Graphical object was not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OBJECT_WRONG_PROPERTY",
+    "description": "Wrong ID of a graphical object property",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_ONEDIM_ARRAYS_ONLY",
+    "description": "Must be a one-dimensional array",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_BUFFER_CREATE",
+    "description": "Failed to create an OpenCL buffer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_CONTEXT_CREATE",
+    "description": "Error creating the OpenCL context",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_EXECUTE",
+    "description": "OpenCL program runtime error",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_INTERNAL",
+    "description": "Internal error occurred when running OpenCL",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_INVALID_HANDLE",
+    "description": "Invalid OpenCL handle",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_KERNEL_CREATE",
+    "description": "Error creating an OpenCL kernel",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_NOT_SUPPORTED",
+    "description": "OpenCL functions are not supported on this computer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_PROGRAM_CREATE",
+    "description": "Error occurred when compiling an OpenCL program",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_QUEUE_CREATE",
+    "description": "Failed to create a run queue in OpenCL",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_SET_KERNEL_PARAMETER",
+    "description": "Error occurred when setting parameters for the OpenCL kernel",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_TOO_LONG_KERNEL_NAME",
+    "description": "Too long kernel name (OpenCL kernel)",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_WRONG_BUFFER_OFFSET",
+    "description": "Invalid offset in the OpenCL buffer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_OPENCL_WRONG_BUFFER_SIZE",
+    "description": "Invalid size of the OpenCL buffer",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_PLAY_SOUND_FAILED",
+    "description": "Sound playing failed",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_RESOURCE_NAME_DUPLICATED",
+    "description": "The names of the dynamic and the static resource match",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_RESOURCE_NAME_IS_TOO_LONG",
+    "description": "The resource name exceeds 63 characters",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_RESOURCE_NOT_FOUND",
+    "description": "Resource with this name has not been found in EX5",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_RESOURCE_UNSUPPORTED_TYPE",
+    "description": "Unsupported resource type or its size exceeds 16 Mb",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_SERIES_ARRAY",
+    "description": "Timeseries cannot be used",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_SHORT_ARRAY_ONLY",
+    "description": "Must be an array of type short",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_SMALL_ARRAY",
+    "description": "Too small array, the starting position is outside the array",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_SMALL_ASSERIES_ARRAY",
+    "description": "The receiving array is declared as AS_SERIES, and it is of insufficient size",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRING_OUT_OF_MEMORY",
+    "description": "Not enough memory for the string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRING_RESIZE_ERROR",
+    "description": "Not enough memory for the relocation of string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRING_SMALL_LEN",
+    "description": "The string length is less than expected",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRING_TIME_ERROR",
+    "description": "Error converting string to date",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRING_TOO_BIGNUMBER",
+    "description": "Too large number, more than ULONG_MAX",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRING_UNKNOWNTYPE",
+    "description": "Unknown data type when converting to a string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRING_ZEROADDED",
+    "description": "0 added to the string end, a useless operation",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRINGPOS_OUTOFRANGE",
+    "description": "Position outside the string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_STRUCT_WITHOBJECTS_ORCLASS",
+    "description": "The structure contains objects of strings and/or dynamic arrays and/or structure of such objects and/or classes",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_SUCCESS",
+    "description": "The operation completed successfully",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TERMINAL_WRONG_PROPERTY",
+    "description": "Wrong identifier of the terminal property",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TOO_LONG_FILENAME",
+    "description": "Too long file name",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TOO_MANY_FILES",
+    "description": "More than 64 files cannot be opened at the same time",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TOO_MANY_FORMATTERS",
+    "description": "Amount of format specifiers more than the parameters",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TOO_MANY_PARAMETERS",
+    "description": "Amount of parameters more than the format specifiers",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TRADE_DEAL_NOT_FOUND",
+    "description": "Deal not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TRADE_DISABLED",
+    "description": "Trading by Expert Advisors prohibited",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TRADE_ORDER_NOT_FOUND",
+    "description": "Order not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TRADE_POSITION_NOT_FOUND",
+    "description": "Position not found",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TRADE_SEND_FAILED",
+    "description": "Trade request sending failed",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_TRADE_WRONG_PROPERTY",
+    "description": "Wrong trade property ID",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_USER_ERROR_FIRST",
+    "description": "User defined errors start with this code",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WEBREQUEST_CONNECT_FAILED",
+    "description": "Failed to connect to specified URL",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WEBREQUEST_INVALID_ADDRESS",
+    "description": "Invalid URL",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WEBREQUEST_REQUEST_FAILED",
+    "description": "HTTP request failed",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WEBREQUEST_TIMEOUT",
+    "description": "Timeout exceeded",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_DIRECTORYNAME",
+    "description": "Wrong directory name",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_FILEHANDLE",
+    "description": "Wrong file handle",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_FILENAME",
+    "description": "Invalid file name",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_FORMATSTRING",
+    "description": "Invalid format string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_INTERNAL_PARAMETER",
+    "description": "Wrong parameter in the inner call of the client terminal function",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_STRING_DATE",
+    "description": "Wrong date in the string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_STRING_OBJECT",
+    "description": "Damaged string object",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_STRING_PARAMETER",
+    "description": "Damaged parameter of string type",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_WRONG_STRING_TIME",
+    "description": "Wrong time in the string",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "ERR_ZEROSIZE_ARRAY",
+    "description": "An array of zero length",
+    "usage": "GetLastError"
+  },
+  {
+    "name": "FILE_ACCESS_DATE",
+    "description": "Date of the last access to the file",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_ANSI",
+    "description": "Strings of ANSI type (one byte symbols). Flag is used in FileOpen().",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_BIN",
+    "description": "Binary read/write mode (without string to string conversion). Flag is used in FileOpen().",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_COMMON",
+    "description": "The file path in the common folder of all client terminals \\Terminal\\Common\\Files. Flag is used in FileOpen(), FileCopy(), FileMove() and in FileIsExist() functions.",
+    "usage": "FileOpen, FileCopy, FileMove, FileIsExist"
+  },
+  {
+    "name": "FILE_CREATE_DATE",
+    "description": "Date of creation",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_CSV",
+    "description": "CSV file (all its elements are converted to strings of the appropriate type, Unicode or ANSI, and separated by separator). Flag is used in FileOpen().",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_END",
+    "description": "Get the end of file sign",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_EXISTS",
+    "description": "Check the existence",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_IS_ANSI",
+    "description": "The file is opened as ANSI (see FILE_ANSI)",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_IS_BINARY",
+    "description": "The file is opened as a binary file (see FILE_BIN)",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_IS_COMMON",
+    "description": "The file is opened in a shared folder of all terminals (see FILE_COMMON)",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_IS_CSV",
+    "description": "The file is opened as CSV (see FILE_CSV)",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_IS_READABLE",
+    "description": "The opened file is readable (see FILE_READ)",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_IS_TEXT",
+    "description": "The file is opened as a text file (see FILE_TXT)",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_IS_WRITABLE",
+    "description": "The opened file is writable (see FILE_WRITE)",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_LINE_END",
+    "description": "Get the end of line sign",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_MODIFY_DATE",
+    "description": "Date of the last modification",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_POSITION",
+    "description": "Position of a pointer in the file",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_READ",
+    "description": "File is opened for reading. Flag is used in FileOpen(). When opening a file specification of FILE_WRITE and/or FILE_READ is required.",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_REWRITE",
+    "description": "Possibility for the file rewrite using functions FileCopy() and FileMove(). The file should exist or should be opened for writing, otherwise the file will not be opened.",
+    "usage": "FileCopy, FileMove"
+  },
+  {
+    "name": "FILE_SHARE_READ",
+    "description": "Shared access for reading from several programs. Flag is used in FileOpen(), but it does not replace the necessity to indicate FILE_WRITE and/or the FILE_READ flag when opening a file.",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_SHARE_WRITE",
+    "description": "Shared access for writing from several programs. Flag is used in FileOpen(), but it does not replace the necessity to indicate FILE_WRITE and/or the FILE_READ flag when opening a file.",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_SIZE",
+    "description": "File size in bytes",
+    "usage": "FileGetInteger"
+  },
+  {
+    "name": "FILE_TXT",
+    "description": "Simple text file (the same as csv file, but without taking into account the separators). Flag is used in FileOpen().",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_UNICODE",
+    "description": "Strings of UNICODE type (two byte symbols). Flag is used in FileOpen().",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FILE_WRITE",
+    "description": "File is opened for writing. Flag is used in FileOpen(). When opening a file specification of FILE_WRITE and/or FILE_READ is required.",
+    "usage": "FileOpen"
+  },
+  {
+    "name": "FLT_DIG",
+    "description": "Number of significant decimal digits for float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_EPSILON",
+    "description": "Minimal value, which satisfies the condition:",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_MANT_DIG",
+    "description": "Bits count in a mantissa for float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_MAX",
+    "description": "Maximal value, which can be represented by float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_MAX_10_EXP",
+    "description": "Maximal decimal value of exponent degree for float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_MAX_EXP",
+    "description": "Maximal binary value of exponent degree for float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_MIN",
+    "description": "Minimal positive value, which can be represented by float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_MIN_10_EXP",
+    "description": "Minimal decimal value of exponent degree for float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FLT_MIN_EXP",
+    "description": "Minimal binary value of exponent degree for float type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "FRIDAY",
+    "description": "Friday",
+    "usage": "SymbolInfoInteger, SymbolInfoSessionQuote, SymbolInfoSessionTrade"
+  },
+  {
+    "name": "GANN_DOWN_TREND",
+    "description": "Line corresponding to the downward trend",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "GANN_UP_TREND",
+    "description": "Line corresponding to the uptrend line",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "GATORJAW_LINE",
+    "description": "Jaw line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "GATORLIPS_LINE",
+    "description": "Lips line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "GATORTEETH_LINE",
+    "description": "Teeth line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "IDABORT",
+    "description": "\"Abort\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDCANCEL",
+    "description": "\"Cancel\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDCONTINUE",
+    "description": "\"Continue\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDIGNORE",
+    "description": "\"Ignore\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDNO",
+    "description": "\"No\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDOK",
+    "description": "\"OK\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDRETRY",
+    "description": "\"Retry\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDTRYAGAIN",
+    "description": "\"Try Again\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IDYES",
+    "description": "\"Yes\" button has been pressed",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "IND_AC",
+    "description": "Accelerator Oscillator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_AD",
+    "description": "Accumulation/Distribution",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_ADX",
+    "description": "Average Directional Index",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_ADXW",
+    "description": "ADX by Welles Wilder",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_ALLIGATOR",
+    "description": "Alligator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_AMA",
+    "description": "Adaptive Moving Average",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_AO",
+    "description": "Awesome Oscillator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_ATR",
+    "description": "Average True Range",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_BANDS",
+    "description": "Bollinger Bands®",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_BEARS",
+    "description": "Bears Power",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_BULLS",
+    "description": "Bulls Power",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_BWMFI",
+    "description": "Market Facilitation Index",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_CCI",
+    "description": "Commodity Channel Index",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_CHAIKIN",
+    "description": "Chaikin Oscillator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_CUSTOM",
+    "description": "Custom indicator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_DEMA",
+    "description": "Double Exponential Moving Average",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_DEMARKER",
+    "description": "DeMarker",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_ENVELOPES",
+    "description": "Envelopes",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_FORCE",
+    "description": "Force Index",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_FRACTALS",
+    "description": "Fractals",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_FRAMA",
+    "description": "Fractal Adaptive Moving Average",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_GATOR",
+    "description": "Gator Oscillator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_ICHIMOKU",
+    "description": "Ichimoku Kinko Hyo",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_MA",
+    "description": "Moving Average",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_MACD",
+    "description": "MACD",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_MFI",
+    "description": "Money Flow Index",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_MOMENTUM",
+    "description": "Momentum",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_OBV",
+    "description": "On Balance Volume",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_OSMA",
+    "description": "OsMA",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_RSI",
+    "description": "Relative Strength Index",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_RVI",
+    "description": "Relative Vigor Index",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_SAR",
+    "description": "Parabolic SAR",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_STDDEV",
+    "description": "Standard Deviation",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_STOCHASTIC",
+    "description": "Stochastic Oscillator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_TEMA",
+    "description": "Triple Exponential Moving Average",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_TRIX",
+    "description": "Triple Exponential Moving Averages Oscillator",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_VIDYA",
+    "description": "Variable Index Dynamic Average",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_VOLUMES",
+    "description": "Volumes",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "IND_WPR",
+    "description": "Williams' Percent Range",
+    "usage": "IndicatorCreate, IndicatorParameters"
+  },
+  {
+    "name": "INDICATOR_CALCULATIONS",
+    "description": "Auxiliary buffers for intermediate calculations",
+    "usage": "SetIndexBuffer"
+  },
+  {
+    "name": "INDICATOR_COLOR_INDEX",
+    "description": "Color",
+    "usage": "SetIndexBuffer"
+  },
+  {
+    "name": "INDICATOR_DATA",
+    "description": "Data to draw",
+    "usage": "SetIndexBuffer"
+  },
+  {
+    "name": "INDICATOR_DIGITS",
+    "description": "Accuracy of drawing of indicator values",
+    "usage": "IndicatorSetInteger"
+  },
+  {
+    "name": "INDICATOR_HEIGHT",
+    "description": "Fixed height of the indicator's window (the preprocessor command #property indicator_height)",
+    "usage": "IndicatorSetInteger"
+  },
+  {
+    "name": "INDICATOR_LEVELCOLOR",
+    "description": "Color of the level line",
+    "usage": "IndicatorSetInteger"
+  },
+  {
+    "name": "INDICATOR_LEVELS",
+    "description": "Number of levels in the indicator window",
+    "usage": "IndicatorSetInteger"
+  },
+  {
+    "name": "INDICATOR_LEVELSTYLE",
+    "description": "Style of the level line",
+    "usage": "IndicatorSetInteger"
+  },
+  {
+    "name": "INDICATOR_LEVELTEXT",
+    "description": "Level description",
+    "usage": "IndicatorSetString"
+  },
+  {
+    "name": "INDICATOR_LEVELVALUE",
+    "description": "Level value",
+    "usage": "IndicatorSetDouble"
+  },
+  {
+    "name": "INDICATOR_LEVELWIDTH",
+    "description": "Thickness of the level line",
+    "usage": "IndicatorSetInteger"
+  },
+  {
+    "name": "INDICATOR_MAXIMUM",
+    "description": "Maximum of the indicator window",
+    "usage": "IndicatorSetDouble"
+  },
+  {
+    "name": "INDICATOR_MINIMUM",
+    "description": "Minimum of the indicator window",
+    "usage": "IndicatorSetDouble"
+  },
+  {
+    "name": "INDICATOR_SHORTNAME",
+    "description": "Short indicator name",
+    "usage": "IndicatorSetString"
+  },
+  {
+    "name": "INT_MAX",
+    "description": "Maximal value, which can be represented by int type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "INT_MIN",
+    "description": "Minimal value, which can be represented by int type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "INVALID_HANDLE",
+    "description": "Incorrect handle",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "IS_DEBUG_MODE",
+    "description": "Flag that a mq5-program operates in debug mode",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "IS_PROFILE_MODE",
+    "description": "Flag that a mq5-program operates in profiling mode",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "KIJUNSEN_LINE",
+    "description": "Kijun-sen line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "LICENSE_DEMO",
+    "description": "A trial version of a paid product from the Market. It works only in the strategy tester",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "LICENSE_FREE",
+    "description": "A free unlimited version",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "LICENSE_FULL",
+    "description": "A purchased licensed version allows at least 5 activations. The number of activations is specified by seller. Seller may increase the allowed number of activations",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "LICENSE_TIME",
+    "description": "A version with a limited term license",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "LONG_MAX",
+    "description": "Maximal value, which can be represented by long type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "LONG_MIN",
+    "description": "Minimal value, which can be represented by long type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "LOWER_BAND",
+    "description": "Lower limit",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "LOWER_HISTOGRAM",
+    "description": "Bottom histogram",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "LOWER_LINE",
+    "description": "Bottom line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "M_1_PI",
+    "description": "1/pi",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_2_PI",
+    "description": "2/pi",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_2_SQRTPI",
+    "description": "2/sqrt(pi)",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_E",
+    "description": "e",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_LN10",
+    "description": "ln(10)",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_LN2",
+    "description": "ln(2)",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_LOG10E",
+    "description": "log10(e)",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_LOG2E",
+    "description": "log2(e)",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_PI",
+    "description": "pi",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_PI_2",
+    "description": "pi/2",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_PI_4",
+    "description": "pi/4",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_SQRT1_2",
+    "description": "1/sqrt(2)",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "M_SQRT2",
+    "description": "sqrt(2)",
+    "usage": "Mathematical Constants"
+  },
+  {
+    "name": "MAIN_LINE",
+    "description": "Main line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "MB_ABORTRETRYIGNORE",
+    "description": "Message window contains three buttons: Abort, Retry and Ignore",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_CANCELTRYCONTINUE",
+    "description": "Message window contains three buttons: Cancel, Try Again, Continue",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_DEFBUTTON1",
+    "description": "The first button MB_DEFBUTTON1 - is default, if the other buttons MB_DEFBUTTON2, MB_DEFBUTTON3, or MB_DEFBUTTON4 are not specified",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_DEFBUTTON2",
+    "description": "The second button is default",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_DEFBUTTON3",
+    "description": "The third button is default",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_DEFBUTTON4",
+    "description": "The fourth button is default",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_ICONEXCLAMATION,",
+    "description": "The exclamation/warning sign icon",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_ICONINFORMATION,",
+    "description": "The encircled i sign",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_ICONQUESTION",
+    "description": "The question sign icon",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_ICONSTOP,",
+    "description": "The STOP sign icon",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_OK",
+    "description": "Message window contains only one button: OK. Default",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_OKCANCEL",
+    "description": "Message window contains two buttons: OK and Cancel",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_RETRYCANCEL",
+    "description": "Message window contains two buttons: Retry and Cancel",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_YESNO",
+    "description": "Message window contains two buttons: Yes and No",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MB_YESNOCANCEL",
+    "description": "Message window contains three buttons: Yes, No and Cancel",
+    "usage": "MessageBox"
+  },
+  {
+    "name": "MINUSDI_LINE",
+    "description": "Line –DI",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "MODE_EMA",
+    "description": "Exponential averaging",
+    "usage": "Smoothing Methods"
+  },
+  {
+    "name": "MODE_LWMA",
+    "description": "Linear-weighted averaging",
+    "usage": "Smoothing Methods"
+  },
+  {
+    "name": "MODE_SMA",
+    "description": "Simple averaging",
+    "usage": "Smoothing Methods"
+  },
+  {
+    "name": "MODE_SMMA",
+    "description": "Smoothed averaging",
+    "usage": "Smoothing Methods"
+  },
+  {
+    "name": "MONDAY",
+    "description": "Monday",
+    "usage": "SymbolInfoInteger, SymbolInfoSessionQuote, SymbolInfoSessionTrade"
+  },
+  {
+    "name": "MQL_DEBUG",
+    "description": "The flag, that indicates the debug mode",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_DLLS_ALLOWED",
+    "description": "The permission to use DLL for the given executed program",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_FRAME_MODE",
+    "description": "The flag, that indicates the Expert Advisor operating in gathering optimization result frames mode",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_LICENSE_TYPE",
+    "description": "Type of license of the EX5 module. The license refers to the EX5 module, from which a request is made using MQLInfoInteger(MQL_LICENSE_TYPE).",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_MEMORY_LIMIT",
+    "description": "Maximum possible amount of dynamic memory for MQL5 program in MB",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_MEMORY_USED",
+    "description": "The memory size used by MQL5 program in MB",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_OPTIMIZATION",
+    "description": "The flag, that indicates the optimization process",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_PROFILER",
+    "description": "The flag, that indicates the program operating in the code profiling mode",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_PROGRAM_NAME",
+    "description": "Name of the mql5-program executed",
+    "usage": "MQLInfoString"
+  },
+  {
+    "name": "MQL_PROGRAM_PATH",
+    "description": "Path for the given executed program",
+    "usage": "MQLInfoString"
+  },
+  {
+    "name": "MQL_PROGRAM_TYPE",
+    "description": "Type of the mql5 program",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_SIGNALS_ALLOWED",
+    "description": "The permission to modify the Signals for the given executed program",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_TESTER",
+    "description": "The flag, that indicates the tester process",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_TRADE_ALLOWED",
+    "description": "The permission to trade for the given executed program",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "MQL_VISUAL_MODE",
+    "description": "The flag, that indicates the visual tester process",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "NULL",
+    "description": "Zero for any types",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "OBJ_ALL_PERIODS",
+    "description": "The object is drawn in all timeframes",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_ARROW",
+    "description": "Arrow",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_BUY",
+    "description": "Buy Sign",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_CHECK",
+    "description": "Check Sign",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_DOWN",
+    "description": "Arrow Down",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_LEFT_PRICE",
+    "description": "Left Price Label",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_RIGHT_PRICE",
+    "description": "Right Price Label",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_SELL",
+    "description": "Sell Sign",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_STOP",
+    "description": "Stop Sign",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_THUMB_DOWN",
+    "description": "Thumbs Down",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_THUMB_UP",
+    "description": "Thumbs Up",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROW_UP",
+    "description": "Arrow Up",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ARROWED_LINE",
+    "description": "Arrowed Line",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_BITMAP",
+    "description": "Bitmap",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_BITMAP_LABEL",
+    "description": "Bitmap Label",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_BUTTON",
+    "description": "Button",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_CHANNEL",
+    "description": "Equidistant Channel",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_CHART",
+    "description": "Chart",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_CYCLES",
+    "description": "Cycle Lines",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_EDIT",
+    "description": "Edit",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ELLIOTWAVE3",
+    "description": "Elliott Correction Wave",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ELLIOTWAVE5",
+    "description": "Elliott Motive Wave",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_ELLIPSE",
+    "description": "Ellipse",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_EVENT",
+    "description": "The \"Event\" object corresponding to an event in the economic calendar",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_EXPANSION",
+    "description": "Fibonacci Expansion",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_FIBO",
+    "description": "Fibonacci Retracement",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_FIBOARC",
+    "description": "Fibonacci Arcs",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_FIBOCHANNEL",
+    "description": "Fibonacci Channel",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_FIBOFAN",
+    "description": "Fibonacci Fan",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_FIBOTIMES",
+    "description": "Fibonacci Time Zones",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_GANNFAN",
+    "description": "Gann Fan",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_GANNGRID",
+    "description": "Gann Grid",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_GANNLINE",
+    "description": "Gann Line",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_HLINE",
+    "description": "Horizontal Line",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_LABEL",
+    "description": "Label",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_NO_PERIODS",
+    "description": "The object is not drawn in all timeframes",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_D1",
+    "description": "The object is drawn in day charts",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_H1",
+    "description": "The object is drawn in 1-hour chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_H12",
+    "description": "The object is drawn in 12-hour chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_H2",
+    "description": "The object is drawn in 2-hour chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_H3",
+    "description": "The object is drawn in 3-hour chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_H4",
+    "description": "The object is drawn in 4-hour chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_H6",
+    "description": "The object is drawn in 6-hour chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_H8",
+    "description": "The object is drawn in 8-hour chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M1",
+    "description": "The object is drawn in 1-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M10",
+    "description": "The object is drawn in 10-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M12",
+    "description": "The object is drawn in 12-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M15",
+    "description": "The object is drawn in 15-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M2",
+    "description": "The object is drawn in 2-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M20",
+    "description": "The object is drawn in 20-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M3",
+    "description": "The object is drawn in 3-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M30",
+    "description": "The object is drawn in 30-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M4",
+    "description": "The object is drawn in 4-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M5",
+    "description": "The object is drawn in 5-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_M6",
+    "description": "The object is drawn in 6-minute chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_MN1",
+    "description": "The object is drawn in month charts",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PERIOD_W1",
+    "description": "The object is drawn in week charts",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJ_PITCHFORK",
+    "description": "Andrews’ Pitchfork",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_RECTANGLE",
+    "description": "Rectangle",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_RECTANGLE_LABEL",
+    "description": "The \"Rectangle label\" object for creating and designing the custom graphical interface.",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_REGRESSION",
+    "description": "Linear Regression Channel",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_STDDEVCHANNEL",
+    "description": "Standard Deviation Channel",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_TEXT",
+    "description": "Text",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_TREND",
+    "description": "Trend Line",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_TRENDBYANGLE",
+    "description": "Trend Line By Angle",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_TRIANGLE",
+    "description": "Triangle",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJ_VLINE",
+    "description": "Vertical Line",
+    "usage": "Object Types"
+  },
+  {
+    "name": "OBJPROP_ALIGN",
+    "description": "Horizontal text alignment in the \"Edit\" object (OBJ_EDIT)",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_ANCHOR",
+    "description": "Location of the anchor point of a graphical object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_ANGLE",
+    "description": "Angle. For the objects with no angle specified, created from a program, the value is equal to EMPTY_VALUE",
+    "usage": "ObjectSetDouble, ObjectGetDouble"
+  },
+  {
+    "name": "OBJPROP_ARROWCODE",
+    "description": "Arrow code for the Arrow object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_BACK",
+    "description": "Object in the background",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_BGCOLOR",
+    "description": "The background color for OBJ_EDIT, OBJ_BUTTON, OBJ_RECTANGLE_LABEL",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_BMPFILE",
+    "description": "The name of BMP-file for Bitmap Label. See also Resources",
+    "usage": "ObjectSetString, ObjectGetString"
+  },
+  {
+    "name": "OBJPROP_BORDER_COLOR",
+    "description": "Border color for the OBJ_EDIT and OBJ_BUTTON objects",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_BORDER_TYPE",
+    "description": "Border type for the \"Rectangle label\" object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_CHART_ID",
+    "description": "ID of the \"Chart\" object (OBJ_CHART). It allows working with the properties of this object like with a normal chart using the functions described in Chart Operations, but there some exceptions.",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_CHART_SCALE",
+    "description": "The scale for the Chart object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_COLOR",
+    "description": "Color",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_CORNER",
+    "description": "The corner of the chart to link a graphical object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_CREATETIME",
+    "description": "Time of object creation",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_DATE_SCALE",
+    "description": "Displaying the time scale for the Chart object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_DEGREE",
+    "description": "Level of the Elliott Wave Marking",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_DEVIATION",
+    "description": "Deviation for the Standard Deviation Channel",
+    "usage": "ObjectSetDouble, ObjectGetDouble"
+  },
+  {
+    "name": "OBJPROP_DIRECTION",
+    "description": "Trend of the Gann object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_DRAWLINES",
+    "description": "Displaying lines for marking the Elliott Wave",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_ELLIPSE",
+    "description": "Showing the full ellipse of the Fibonacci Arc object (OBJ_FIBOARC)",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_FILL",
+    "description": "Fill an object with color (for OBJ_RECTANGLE, OBJ_TRIANGLE, OBJ_ELLIPSE, OBJ_CHANNEL, OBJ_STDDEVCHANNEL, OBJ_REGRESSION)",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_FONT",
+    "description": "Font",
+    "usage": "ObjectSetString, ObjectGetString"
+  },
+  {
+    "name": "OBJPROP_FONTSIZE",
+    "description": "Font size",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_HIDDEN",
+    "description": "Prohibit showing of the name of a graphical object in the list of objects from the terminal menu \"Charts\" - \"Objects\" - \"List of objects\". The true value allows to hide an object from the list. By default, true is set to the objects that display calendar events, trading history and to the objects created from MQL5 programs. To see such graphical objects and access their properties, click on the \"All\" button in the \"List of objects\" window.",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_LEVELCOLOR",
+    "description": "Color of the line-level",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_LEVELS",
+    "description": "Number of levels",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_LEVELSTYLE",
+    "description": "Style of the line-level",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_LEVELTEXT",
+    "description": "Level description",
+    "usage": "ObjectSetString, ObjectGetString"
+  },
+  {
+    "name": "OBJPROP_LEVELVALUE",
+    "description": "Level value",
+    "usage": "ObjectSetDouble, ObjectGetDouble"
+  },
+  {
+    "name": "OBJPROP_LEVELWIDTH",
+    "description": "Thickness of the line-level",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_NAME",
+    "description": "Object name",
+    "usage": "ObjectSetString, ObjectGetString"
+  },
+  {
+    "name": "OBJPROP_PERIOD",
+    "description": "Timeframe for the Chart object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_PRICE",
+    "description": "Price coordinate",
+    "usage": "ObjectSetDouble, ObjectGetDouble"
+  },
+  {
+    "name": "OBJPROP_PRICE_SCALE",
+    "description": "Displaying the price scale for the Chart object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_RAY",
+    "description": "A vertical line goes through all the windows of a chart",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_RAY_LEFT",
+    "description": "Ray goes to the left",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_RAY_RIGHT",
+    "description": "Ray goes to the right",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_READONLY",
+    "description": "Ability to edit text in the Edit object",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_SCALE",
+    "description": "Scale (properties of Gann objects and Fibonacci Arcs)",
+    "usage": "ObjectSetDouble, ObjectGetDouble"
+  },
+  {
+    "name": "OBJPROP_SELECTABLE",
+    "description": "Object availability",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_SELECTED",
+    "description": "Object is selected",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_STATE",
+    "description": "Button state (pressed / depressed)",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_STYLE",
+    "description": "Style",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_SYMBOL",
+    "description": "Symbol for the Chart object",
+    "usage": "ObjectSetString, ObjectGetString"
+  },
+  {
+    "name": "OBJPROP_TEXT",
+    "description": "Description of the object (the text contained in the object)",
+    "usage": "ObjectSetString, ObjectGetString"
+  },
+  {
+    "name": "OBJPROP_TIME",
+    "description": "Time coordinate",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_TIMEFRAMES",
+    "description": "Visibility of an object at timeframes",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_TOOLTIP",
+    "description": "The text of a tooltip. If the property is not set, then the tooltip generated automatically by the terminal is shown. A tooltip can be disabled by setting the \"\\n\" (line feed) value to it",
+    "usage": "ObjectSetString, ObjectGetString"
+  },
+  {
+    "name": "OBJPROP_TYPE",
+    "description": "Object type",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_WIDTH",
+    "description": "Line thickness",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_XDISTANCE",
+    "description": "The distance in pixels along the X axis from the binding corner (see note)",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_XOFFSET",
+    "description": "The X coordinate of the upper left corner of the rectangular visible area in the graphical objects \"Bitmap Label\" and \"Bitmap\" (OBJ_BITMAP_LABEL and OBJ_BITMAP). The value is set in pixels relative to the upper left corner of the original image.",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_XSIZE",
+    "description": "The object's width along the X axis in pixels. Specified for OBJ_LABEL (read only), OBJ_BUTTON, OBJ_CHART, OBJ_BITMAP, OBJ_BITMAP_LABEL, OBJ_EDIT, OBJ_RECTANGLE_LABEL objects.",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_YDISTANCE",
+    "description": "The distance in pixels along the Y axis from the binding corner (see note)",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_YOFFSET",
+    "description": "The Y coordinate of the upper left corner of the rectangular visible area in the graphical objects \"Bitmap Label\" and \"Bitmap\" (OBJ_BITMAP_LABEL and OBJ_BITMAP). The value is set in pixels relative to the upper left corner of the original image.",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_YSIZE",
+    "description": "The object's height along the Y axis in pixels. Specified for OBJ_LABEL (read only), OBJ_BUTTON, OBJ_CHART, OBJ_BITMAP, OBJ_BITMAP_LABEL, OBJ_EDIT, OBJ_RECTANGLE_LABEL objects.",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "OBJPROP_ZORDER",
+    "description": "Priority of a graphical object for receiving events of clicking on a chart (CHARTEVENT_CLICK). The default zero value is set when creating an object; the priority can be increased if necessary. When applying objects one over another, only one of them with the highest priority will receive the CHARTEVENT_CLICK event.",
+    "usage": "ObjectSetInteger, ObjectGetInteger"
+  },
+  {
+    "name": "ORDER_COMMENT",
+    "description": "Order comment",
+    "usage": "OrderGetString, HistoryOrderGetString"
+  },
+  {
+    "name": "ORDER_FILLING_FOK",
+    "description": "This filling policy means that an order can be filled only in the specified amount. If the necessary amount of a financial instrument is currently unavailable in the market, the order will not be executed. The required volume can be filled using several offers available on the market at the moment.",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_FILLING_IOC",
+    "description": "This mode means that a trader agrees to execute a deal with the volume maximally available in the market within that indicated in the order. In case the the entire volume of an order cannot be filled, the available volume of it will be filled, and the remaining volume will be canceled.",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_FILLING_RETURN",
+    "description": "This policy is used only for market orders (ORDER_TYPE_BUY and ORDER_TYPE_SELL), limit and stop limit orders (ORDER_TYPE_BUY_LIMIT, ORDER_TYPE_SELL_LIMIT, ORDER_TYPE_BUY_STOP_LIMIT and ORDER_TYPE_SELL_STOP_LIMIT ) and only for the symbols with Market or Exchange execution. In case of partial filling a market or limit order with remaining volume is not canceled but processed further.",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_MAGIC",
+    "description": "ID of an Expert Advisor that has placed the order (designed to ensure that each Expert Advisor places its own unique number)",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_POSITION_ID",
+    "description": "Position identifier that is set to an order as soon as it is executed. Each executed order results in a deal that opens or modifies an already existing position. The identifier of exactly this position is set to the executed order at this moment.",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_PRICE_CURRENT",
+    "description": "The current price of the order symbol",
+    "usage": "OrderGetDouble, HistoryOrderGetDouble"
+  },
+  {
+    "name": "ORDER_PRICE_OPEN",
+    "description": "Price specified in the order",
+    "usage": "OrderGetDouble, HistoryOrderGetDouble"
+  },
+  {
+    "name": "ORDER_PRICE_STOPLIMIT",
+    "description": "The Limit order price for the StopLimit order",
+    "usage": "OrderGetDouble, HistoryOrderGetDouble"
+  },
+  {
+    "name": "ORDER_SL",
+    "description": "Stop Loss value",
+    "usage": "OrderGetDouble, HistoryOrderGetDouble"
+  },
+  {
+    "name": "ORDER_STATE",
+    "description": "Order state",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_CANCELED",
+    "description": "Order canceled by client",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_EXPIRED",
+    "description": "Order expired",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_FILLED",
+    "description": "Order fully executed",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_PARTIAL",
+    "description": "Order partially executed",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_PLACED",
+    "description": "Order accepted",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_REJECTED",
+    "description": "Order rejected",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_REQUEST_ADD",
+    "description": "Order is being registered (placing to the trading system)",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_REQUEST_CANCEL",
+    "description": "Order is being deleted (deleting from the trading system)",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_REQUEST_MODIFY",
+    "description": "Order is being modified (changing its parameters)",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_STATE_STARTED",
+    "description": "Order checked, but not yet accepted by broker",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_SYMBOL",
+    "description": "Symbol of the order",
+    "usage": "OrderGetString, HistoryOrderGetString"
+  },
+  {
+    "name": "ORDER_TIME_DAY",
+    "description": "Good till current trade day order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_DONE",
+    "description": "Order execution or cancellation time",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_DONE_MSC",
+    "description": "Order execution/cancellation time in milliseconds since 01.01.1970",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_EXPIRATION",
+    "description": "Order expiration time",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_GTC",
+    "description": "Good till cancel order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_SETUP",
+    "description": "Order setup time",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_SETUP_MSC",
+    "description": "The time of placing an order for execution in milliseconds since 01.01.1970",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_SPECIFIED",
+    "description": "Good till expired order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TIME_SPECIFIED_DAY",
+    "description": "The order will be effective till 23:59:59 of the specified day. If this time is outside a trading session, the order expires in the nearest trading time.",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TP",
+    "description": "Take Profit value",
+    "usage": "OrderGetDouble, HistoryOrderGetDouble"
+  },
+  {
+    "name": "ORDER_TYPE",
+    "description": "Order type",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_BUY",
+    "description": "Market Buy order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_BUY_LIMIT",
+    "description": "Buy Limit pending order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_BUY_STOP",
+    "description": "Buy Stop pending order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_BUY_STOP_LIMIT",
+    "description": "Upon reaching the order price, a pending Buy Limit order is placed at the StopLimit price",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_FILLING",
+    "description": "Order filling type",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_SELL",
+    "description": "Market Sell order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_SELL_LIMIT",
+    "description": "Sell Limit pending order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_SELL_STOP",
+    "description": "Sell Stop pending order",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_SELL_STOP_LIMIT",
+    "description": "Upon reaching the order price, a pending Sell Limit order is placed at the StopLimit price",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_TYPE_TIME",
+    "description": "Order lifetime",
+    "usage": "OrderGetInteger, HistoryOrderGetInteger"
+  },
+  {
+    "name": "ORDER_VOLUME_CURRENT",
+    "description": "Order current volume",
+    "usage": "OrderGetDouble, HistoryOrderGetDouble"
+  },
+  {
+    "name": "ORDER_VOLUME_INITIAL",
+    "description": "Order initial volume",
+    "usage": "OrderGetDouble, HistoryOrderGetDouble"
+  },
+  {
+    "name": "PERIOD_CURRENT",
+    "description": "Current timeframe",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_D1",
+    "description": "1 day",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_H1",
+    "description": "1 hour",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_H12",
+    "description": "12 hours",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_H2",
+    "description": "2 hours",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_H3",
+    "description": "3 hours",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_H4",
+    "description": "4 hours",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_H6",
+    "description": "6 hours",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_H8",
+    "description": "8 hours",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M1",
+    "description": "1 minute",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M10",
+    "description": "10 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M12",
+    "description": "12 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M15",
+    "description": "15 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M2",
+    "description": "2 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M20",
+    "description": "20 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M3",
+    "description": "3 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M30",
+    "description": "30 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M4",
+    "description": "4 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M5",
+    "description": "5 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_M6",
+    "description": "6 minutes",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_MN1",
+    "description": "1 month",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PERIOD_W1",
+    "description": "1 week",
+    "usage": "Chart Timeframes"
+  },
+  {
+    "name": "PLOT_ARROW",
+    "description": "Arrow code for style DRAW_ARROW",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_ARROW_SHIFT",
+    "description": "Vertical shift of arrows for style DRAW_ARROW",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_COLOR_INDEXES",
+    "description": "The number of colors",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_DRAW_BEGIN",
+    "description": "Number of initial bars without drawing and values in the DataWindow",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_DRAW_TYPE",
+    "description": "Type of graphical construction",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_EMPTY_VALUE",
+    "description": "An empty value for plotting, for which there is no drawing",
+    "usage": "PlotIndexSetDouble"
+  },
+  {
+    "name": "PLOT_LABEL",
+    "description": "The name of the indicator graphical series to display in the DataWindow. When working with complex graphical styles requiring several indicator buffers for display, the names for each buffer can be specified using \";\" as a separator. Sample code is shown in DRAW_CANDLES",
+    "usage": "PlotIndexSetString"
+  },
+  {
+    "name": "PLOT_LINE_COLOR",
+    "description": "The index of a buffer containing the drawing color",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_LINE_STYLE",
+    "description": "Drawing line style",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_LINE_WIDTH",
+    "description": "The thickness of the drawing line",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_SHIFT",
+    "description": "Shift of indicator plotting along the time axis in bars",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLOT_SHOW_DATA",
+    "description": "Sign of display of construction values in the DataWindow",
+    "usage": "PlotIndexSetInteger, PlotIndexGetInteger"
+  },
+  {
+    "name": "PLUSDI_LINE",
+    "description": "Line +DI",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "POINTER_AUTOMATIC",
+    "description": "Pointer of any objects created automatically (not using new())",
+    "usage": "CheckPointer"
+  },
+  {
+    "name": "POINTER_DYNAMIC",
+    "description": "Pointer of the object created by the new() operator",
+    "usage": "CheckPointer"
+  },
+  {
+    "name": "POINTER_INVALID",
+    "description": "Incorrect pointer",
+    "usage": "CheckPointer"
+  },
+  {
+    "name": "POSITION_COMMENT",
+    "description": "Position comment",
+    "usage": "PositionGetString"
+  },
+  {
+    "name": "POSITION_COMMISSION",
+    "description": "Commission",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "POSITION_IDENTIFIER",
+    "description": "Position identifier is a unique number that is assigned to every newly opened position and doesn't change during the entire lifetime of the position. Position turnover doesn't change its identifier.",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_MAGIC",
+    "description": "Position magic number (see ORDER_MAGIC)",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_PRICE_CURRENT",
+    "description": "Current price of the position symbol",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "POSITION_PRICE_OPEN",
+    "description": "Position open price",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "POSITION_PROFIT",
+    "description": "Current profit",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "POSITION_SL",
+    "description": "Stop Loss level of opened position",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "POSITION_SWAP",
+    "description": "Cumulative swap",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "POSITION_SYMBOL",
+    "description": "Symbol of the position",
+    "usage": "PositionGetString"
+  },
+  {
+    "name": "POSITION_TIME",
+    "description": "Position open time",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_TIME_MSC",
+    "description": "Position opening time in milliseconds since 01.01.1970",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_TIME_UPDATE",
+    "description": "Position changing time in seconds since 01.01.1970",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_TIME_UPDATE_MSC",
+    "description": "Position changing time in milliseconds since 01.01.1970",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_TP",
+    "description": "Take Profit level of opened position",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "POSITION_TYPE",
+    "description": "Position type",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_TYPE_BUY",
+    "description": "Buy",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_TYPE_SELL",
+    "description": "Sell",
+    "usage": "PositionGetInteger"
+  },
+  {
+    "name": "POSITION_VOLUME",
+    "description": "Position volume",
+    "usage": "PositionGetDouble"
+  },
+  {
+    "name": "PRICE_CLOSE",
+    "description": "Close price",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "PRICE_HIGH",
+    "description": "The maximum price for the period",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "PRICE_LOW",
+    "description": "The minimum price for the period",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "PRICE_MEDIAN",
+    "description": "Median price, (high + low)/2",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "PRICE_OPEN",
+    "description": "Open price",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "PRICE_TYPICAL",
+    "description": "Typical price, (high + low + close)/3",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "PRICE_WEIGHTED",
+    "description": "Average price, (high + low + close + close)/4",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "PROGRAM_EXPERT",
+    "description": "Expert",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "PROGRAM_INDICATOR",
+    "description": "Indicator",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "PROGRAM_SCRIPT",
+    "description": "Script",
+    "usage": "MQLInfoInteger"
+  },
+  {
+    "name": "REASON_ACCOUNT",
+    "description": "Another account has been activated or reconnection to the trade server has occurred due to changes in the account settings",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_CHARTCHANGE",
+    "description": "Symbol or chart period has been changed",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_CHARTCLOSE",
+    "description": "Chart has been closed",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_CLOSE",
+    "description": "Terminal has been closed",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_INITFAILED",
+    "description": "This value means that OnInit() handler has returned a nonzero value",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_PARAMETERS",
+    "description": "Input parameters have been changed by a user",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_PROGRAM",
+    "description": "Expert Advisor terminated its operation by calling the ExpertRemove() function",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_RECOMPILE",
+    "description": "Program has been recompiled",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_REMOVE",
+    "description": "Program has been deleted from the chart",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "REASON_TEMPLATE",
+    "description": "A new template has been applied",
+    "usage": "UninitializeReason, OnDeinit"
+  },
+  {
+    "name": "SATURDAY",
+    "description": "Saturday",
+    "usage": "SymbolInfoInteger, SymbolInfoSessionQuote, SymbolInfoSessionTrade"
+  },
+  {
+    "name": "SEEK_CUR",
+    "description": "Current position of a file pointer",
+    "usage": "FileSeek"
+  },
+  {
+    "name": "SEEK_END",
+    "description": "File end",
+    "usage": "FileSeek"
+  },
+  {
+    "name": "SEEK_SET",
+    "description": "File beginning",
+    "usage": "FileSeek"
+  },
+  {
+    "name": "SENKOUSPANA_LINE",
+    "description": "Senkou Span A line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "SENKOUSPANB_LINE",
+    "description": "Senkou Span B line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "SERIES_BARS_COUNT",
+    "description": "Bars count for the symbol-period for the current moment",
+    "usage": "SeriesInfoInteger"
+  },
+  {
+    "name": "SERIES_FIRSTDATE",
+    "description": "The very first date for the symbol-period for the current moment",
+    "usage": "SeriesInfoInteger"
+  },
+  {
+    "name": "SERIES_LASTBAR_DATE",
+    "description": "Open time of the last bar of the symbol-period",
+    "usage": "SeriesInfoInteger"
+  },
+  {
+    "name": "SERIES_SERVER_FIRSTDATE",
+    "description": "The very first date in the history of the symbol on the server regardless of the timeframe",
+    "usage": "SeriesInfoInteger"
+  },
+  {
+    "name": "SERIES_SYNCHRONIZED",
+    "description": "Symbol/period data synchronization flag for the current moment",
+    "usage": "SeriesInfoInteger"
+  },
+  {
+    "name": "SERIES_TERMINAL_FIRSTDATE",
+    "description": "The very first date in the history of the symbol in the client terminal, regardless of the timeframe",
+    "usage": "SeriesInfoInteger"
+  },
+  {
+    "name": "SHORT_MAX",
+    "description": "Maximal value, which can be represented by short type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "SHORT_MIN",
+    "description": "Minimal value, which can be represented by short type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "SIGNAL_BASE_AUTHOR_LOGIN",
+    "description": "Author login",
+    "usage": "SignalBaseGetString"
+  },
+  {
+    "name": "SIGNAL_BASE_BALANCE",
+    "description": "Account balance",
+    "usage": "SignalBaseGetDouble"
+  },
+  {
+    "name": "SIGNAL_BASE_BROKER",
+    "description": "Broker name (company)",
+    "usage": "SignalBaseGetString"
+  },
+  {
+    "name": "SIGNAL_BASE_BROKER_SERVER",
+    "description": "Broker server",
+    "usage": "SignalBaseGetString"
+  },
+  {
+    "name": "SIGNAL_BASE_CURRENCY",
+    "description": "Signal base currency",
+    "usage": "SignalBaseGetString"
+  },
+  {
+    "name": "SIGNAL_BASE_DATE_PUBLISHED",
+    "description": "Publication date (date when it become available for subscription)",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_DATE_STARTED",
+    "description": "Monitoring starting date",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_EQUITY",
+    "description": "Account equity",
+    "usage": "SignalBaseGetDouble"
+  },
+  {
+    "name": "SIGNAL_BASE_GAIN",
+    "description": "Account gain",
+    "usage": "SignalBaseGetDouble"
+  },
+  {
+    "name": "SIGNAL_BASE_ID",
+    "description": "Signal ID",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_LEVERAGE",
+    "description": "Account leverage",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_MAX_DRAWDOWN",
+    "description": "Account maximum drawdown",
+    "usage": "SignalBaseGetDouble"
+  },
+  {
+    "name": "SIGNAL_BASE_NAME",
+    "description": "Signal name",
+    "usage": "SignalBaseGetString"
+  },
+  {
+    "name": "SIGNAL_BASE_PIPS",
+    "description": "Profit in pips",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_PRICE",
+    "description": "Signal subscription price",
+    "usage": "SignalBaseGetDouble"
+  },
+  {
+    "name": "SIGNAL_BASE_RATING",
+    "description": "Position in rating",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_ROI",
+    "description": "Return on Investment (%)",
+    "usage": "SignalBaseGetDouble"
+  },
+  {
+    "name": "SIGNAL_BASE_SUBSCRIBERS",
+    "description": "Number of subscribers",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_TRADE_MODE",
+    "description": "Account type (0-real, 1-demo, 2-contest)",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_BASE_TRADES",
+    "description": "Number of trades",
+    "usage": "SignalBaseGetInteger"
+  },
+  {
+    "name": "SIGNAL_INFO_CONFIRMATIONS_DISABLED",
+    "description": "The flag enables synchronization without confirmation dialog",
+    "usage": "SignalInfoGetInteger, SignalInfoSetInteger"
+  },
+  {
+    "name": "SIGNAL_INFO_COPY_SLTP",
+    "description": "Copy Stop Loss and Take Profit flag",
+    "usage": "SignalInfoGetInteger, SignalInfoSetInteger"
+  },
+  {
+    "name": "SIGNAL_INFO_DEPOSIT_PERCENT",
+    "description": "Deposit percent (%)",
+    "usage": "SignalInfoGetInteger, SignalInfoSetInteger"
+  },
+  {
+    "name": "SIGNAL_INFO_EQUITY_LIMIT",
+    "description": "Equity limit",
+    "usage": "SignalInfoGetDouble, SignalInfoSetDouble"
+  },
+  {
+    "name": "SIGNAL_INFO_ID",
+    "description": "Signal id, r/o",
+    "usage": "SignalInfoGetInteger, SignalInfoSetInteger"
+  },
+  {
+    "name": "SIGNAL_INFO_NAME",
+    "description": "Signal name, r/o",
+    "usage": "SignalInfoGetString"
+  },
+  {
+    "name": "SIGNAL_INFO_SLIPPAGE",
+    "description": "Slippage (used when placing market orders in synchronization of positions and copying of trades)",
+    "usage": "SignalInfoGetDouble, SignalInfoSetDouble"
+  },
+  {
+    "name": "SIGNAL_INFO_SUBSCRIPTION_ENABLED",
+    "description": "\"Copy trades by subscription\" permission flag",
+    "usage": "SignalInfoGetInteger, SignalInfoSetInteger"
+  },
+  {
+    "name": "SIGNAL_INFO_TERMS_AGREE",
+    "description": "\"Agree to terms of use of Signals service\" flag, r/o",
+    "usage": "SignalInfoGetInteger, SignalInfoSetInteger"
+  },
+  {
+    "name": "SIGNAL_INFO_VOLUME_PERCENT",
+    "description": "Maximum percent of deposit used (%), r/o",
+    "usage": "SignalInfoGetDouble, SignalInfoSetDouble"
+  },
+  {
+    "name": "SIGNAL_LINE",
+    "description": "Signal line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "STAT_BALANCE_DD",
+    "description": "Maximum balance drawdown in monetary terms. In the process of trading, a balance may have numerous drawdowns; here the largest value is taken",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_BALANCE_DD_RELATIVE",
+    "description": "Balance drawdown in monetary terms that was recorded at the moment of the maximum balance drawdown as a percentage (STAT_BALANCE_DDREL_PERCENT).",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_BALANCE_DDREL_PERCENT",
+    "description": "Maximum balance drawdown as a percentage. In the process of trading, a balance may have numerous drawdowns, for each of which the relative drawdown value in percents is calculated. The greatest value is returned",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_BALANCEDD_PERCENT",
+    "description": "Balance drawdown as a percentage that was recorded at the moment of the maximum balance drawdown in monetary terms (STAT_BALANCE_DD).",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_BALANCEMIN",
+    "description": "Minimum balance value",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_CONLOSSMAX",
+    "description": "Maximum loss in a series of losing trades. The value is less than or equal to zero",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_CONLOSSMAX_TRADES",
+    "description": "The number of trades that have formed STAT_CONLOSSMAX (maximum loss in a series of losing trades)",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_CONPROFITMAX",
+    "description": "Maximum profit in a series of profitable trades. The value is greater than or equal to zero",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_CONPROFITMAX_TRADES",
+    "description": "The number of trades that have formed STAT_CONPROFITMAX (maximum profit in a series of profitable trades)",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_CUSTOM_ONTESTER",
+    "description": "The value of the calculated custom optimization criterion returned by the OnTester() function",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_DEALS",
+    "description": "The number of deals",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_EQUITY_DD",
+    "description": "Maximum equity drawdown in monetary terms. In the process of trading, numerous drawdowns may appear on the equity; here the largest value is taken",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_EQUITY_DD_RELATIVE",
+    "description": "Equity drawdown in monetary terms that was recorded at the moment of the maximum equity drawdown in percent (STAT_EQUITY_DDREL_PERCENT).",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_EQUITY_DDREL_PERCENT",
+    "description": "Maximum equity drawdown as a percentage. In the process of trading, an equity may have numerous drawdowns, for each of which the relative drawdown value in percents is calculated. The greatest value is returned",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_EQUITYDD_PERCENT",
+    "description": "Drawdown in percent that was recorded at the moment of the maximum equity drawdown in monetary terms (STAT_EQUITY_DD).",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_EQUITYMIN",
+    "description": "Minimum equity value",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_EXPECTED_PAYOFF",
+    "description": "Expected payoff",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_GROSS_LOSS",
+    "description": "Total loss, the sum of all negative trades. The value is less than or equal to zero",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_GROSS_PROFIT",
+    "description": "Total profit, the sum of all profitable (positive) trades. The value is greater than or equal to zero",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_INITIAL_DEPOSIT",
+    "description": "The value of the initial deposit",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_LONG_TRADES",
+    "description": "Long trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_LOSS_TRADES",
+    "description": "Losing trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_LOSSTRADES_AVGCON",
+    "description": "Average length of a losing series of trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_MAX_CONLOSS_TRADES",
+    "description": "The number of trades in the longest series of losing trades STAT_MAX_CONLOSSES",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_MAX_CONLOSSES",
+    "description": "The total loss of the longest series of losing trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_MAX_CONPROFIT_TRADES",
+    "description": "The number of trades in the longest series of profitable trades STAT_MAX_CONWINS",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_MAX_CONWINS",
+    "description": "The total profit of the longest series of profitable trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_MAX_LOSSTRADE",
+    "description": "Maximum loss – the lowest value of all losing trades. The value is less than or equal to zero",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_MAX_PROFITTRADE",
+    "description": "Maximum profit – the largest value of all profitable trades. The value is greater than or equal to zero",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_MIN_MARGINLEVEL",
+    "description": "Minimum value of the margin level",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_PROFIT",
+    "description": "Net profit after testing, the sum of STAT_GROSS_PROFIT and STAT_GROSS_LOSS (STAT_GROSS_LOSS is always less than or equal to zero)",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_PROFIT_FACTOR",
+    "description": "Profit factor, equal to the ratio of STAT_GROSS_PROFIT/STAT_GROSS_LOSS. If STAT_GROSS_LOSS=0, the profit factor is equal to DBL_MAX",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_PROFIT_LONGTRADES",
+    "description": "Profitable long trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_PROFIT_SHORTTRADES",
+    "description": "Profitable short trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_PROFIT_TRADES",
+    "description": "Profitable trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_PROFITTRADES_AVGCON",
+    "description": "Average length of a profitable series of trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_RECOVERY_FACTOR",
+    "description": "Recovery factor, equal to the ratio of STAT_PROFIT/STAT_BALANCE_DD",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_SHARPE_RATIO",
+    "description": "Sharpe ratio",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_SHORT_TRADES",
+    "description": "Short trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_TRADES",
+    "description": "The number of trades",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STAT_WITHDRAWAL",
+    "description": "Money withdrawn from an account",
+    "usage": "TesterStatistics"
+  },
+  {
+    "name": "STO_CLOSECLOSE",
+    "description": "Calculation is based on Close/Close prices",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "STO_LOWHIGH",
+    "description": "Calculation is based on Low/High prices",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "STYLE_DASH",
+    "description": "Broken line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "STYLE_DASHDOT",
+    "description": "Dash-dot line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "STYLE_DASHDOTDOT",
+    "description": "Dash - two points",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "STYLE_DOT",
+    "description": "Dotted line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "STYLE_SOLID",
+    "description": "Solid line",
+    "usage": "Drawing Styles"
+  },
+  {
+    "name": "SUNDAY",
+    "description": "Sunday",
+    "usage": "SymbolInfoInteger, SymbolInfoSessionQuote, SymbolInfoSessionTrade"
+  },
+  {
+    "name": "SYMBOL_ASK",
+    "description": "Ask - best buy offer",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_ASKHIGH",
+    "description": "Maximal Ask of the day",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_ASKLOW",
+    "description": "Minimal Ask of the day",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_BANK",
+    "description": "Feeder of the current quote",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_BASIS",
+    "description": "The underlying asset of a derivative",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_BID",
+    "description": "Bid - best sell offer",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_BIDHIGH",
+    "description": "Maximal Bid of the day",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_BIDLOW",
+    "description": "Minimal Bid of the day",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_CFD",
+    "description": "CFD mode - calculation of margin and profit for CFD",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_CFDINDEX",
+    "description": "CFD index mode - calculation of margin and profit for CFD by indexes",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_CFDLEVERAGE",
+    "description": "CFD Leverage mode - calculation of margin and profit for CFD at leverage trading",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_EXCH_FUTURES",
+    "description": "Futures mode – calculation of margin and profit for trading futures contracts on a stock exchange",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_EXCH_FUTURES_FORTS",
+    "description": "FORTS Futures mode – calculation of margin and profit for trading futures contracts on FORTS.",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_EXCH_STOCKS",
+    "description": "Exchange mode – calculation of margin and profit for trading securities on a stock exchange",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_FOREX",
+    "description": "Forex mode - calculation of profit and margin for Forex",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_FUTURES",
+    "description": "Futures mode - calculation of margin and profit for futures",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CALC_MODE_SERV_COLLATERAL",
+    "description": "Collateral mode - a symbol is used as a non-tradable asset on a trading account.",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_CURRENCY_BASE",
+    "description": "Basic currency of a symbol",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_CURRENCY_MARGIN",
+    "description": "Margin currency",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_CURRENCY_PROFIT",
+    "description": "Profit currency",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_DESCRIPTION",
+    "description": "Symbol description",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_DIGITS",
+    "description": "Digits after a decimal point",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_EXPIRATION_DAY",
+    "description": "The order is valid till the end of the day",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_EXPIRATION_GTC",
+    "description": "The order is valid during the unlimited time period, until it is explicitly canceled",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_EXPIRATION_MODE",
+    "description": "Flags of allowed order expiration modes",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_EXPIRATION_SPECIFIED",
+    "description": "The expiration time is specified in the order",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_EXPIRATION_SPECIFIED_DAY",
+    "description": "The expiration date is specified in the order",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_EXPIRATION_TIME",
+    "description": "Date of the symbol trade end (usually used for futures)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_FILLING_FOK",
+    "description": "This policy means that a deal can be executed only with the specified volume. If the necessary amount of a financial instrument is currently unavailable in the market, the order will not be executed. The required volume can be filled using several offers available on the market at the moment.",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_FILLING_IOC",
+    "description": "In this case a trader agrees to execute a deal with the volume maximally available in the market within that indicated in the order. In case the order cannot be filled completely, the available volume of the order will be filled, and the remaining volume will be canceled. The possibility of using IOC orders is determined at the trade server.",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_FILLING_MODE",
+    "description": "Flags of allowed order filling modes",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_ISIN",
+    "description": "The name of a symbol in the ISIN system (International Securities Identification Number). The International Securities Identification Number is a 12-digit alphanumeric code that uniquely identifies a security. The presence of this symbol property is determined on the side of a trade server.",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_LAST",
+    "description": "Price of the last deal",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_LASTHIGH",
+    "description": "Maximal Last of the day",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_LASTLOW",
+    "description": "Minimal Last of the day",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_MARGIN_INITIAL",
+    "description": "Initial margin means the amount in the margin currency required for opening a position with the volume of one lot. It is used for checking a client's assets when he or she enters the market.",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_MARGIN_MAINTENANCE",
+    "description": "The maintenance margin. If it is set, it sets the margin amount in the margin currency of the symbol, charged from one lot. It is used for checking a client's assets when his/her account state changes. If the maintenance margin is equal to 0, the initial margin is used.",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_OPTION_MODE",
+    "description": "Option type",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_OPTION_MODE_EUROPEAN",
+    "description": "European option may only be exercised on a specified date (expiration, execution date, delivery date)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_OPTION_MODE_AMERICAN",
+    "description": "American option may be exercised on any trading day on or before expiry. The period within which a buyer can exercise the option is specified for it",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_OPTION_RIGHT",
+    "description": "Option right (Call/Put)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_OPTION_RIGHT_CALL",
+    "description": "A call option gives you the right to buy an asset at a specified price",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_OPTION_RIGHT_PUT",
+    "description": "A put option gives you the right to sell an asset at a specified price",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_OPTION_STRIKE",
+    "description": "The strike price of an option. The price at which an option buyer can buy (in a Call option) or sell (in a Put option) the underlying asset, and the option seller is obliged to sell or buy the appropriate amount of the underlying asset.",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_ORDER_LIMIT",
+    "description": "Limit orders are allowed (Buy Limit and Sell Limit)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_ORDER_MARKET",
+    "description": "Market orders are allowed (Buy and Sell)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_ORDER_MODE",
+    "description": "Flags of allowed order types",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_ORDER_SL",
+    "description": "Stop Loss is allowed",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_ORDER_STOP",
+    "description": "Stop orders are allowed (Buy Stop and Sell Stop)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_ORDER_STOP_LIMIT",
+    "description": "Stop-limit orders are allowed (Buy Stop Limit and Sell Stop Limit)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_ORDER_TP",
+    "description": "Take Profit is allowed",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_PATH",
+    "description": "Path in the symbol tree",
+    "usage": "SymbolInfoString"
+  },
+  {
+    "name": "SYMBOL_POINT",
+    "description": "Symbol point value",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SELECT",
+    "description": "Symbol is selected in Market Watch",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SESSION_AW",
+    "description": "Average weighted price of the current session",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_BUY_ORDERS",
+    "description": "Number of Buy orders at the moment",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SESSION_BUY_ORDERS_VOLUME",
+    "description": "Current volume of Buy orders",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_CLOSE",
+    "description": "Close price of the current session",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_DEALS",
+    "description": "Number of deals in the current session",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SESSION_INTEREST",
+    "description": "Summary open interest",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_OPEN",
+    "description": "Open price of the current session",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_PRICE_LIMIT_MAX",
+    "description": "Maximal price of the current session",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_PRICE_LIMIT_MIN",
+    "description": "Minimal price of the current session",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_PRICE_SETTLEMENT",
+    "description": "Settlement price of the current session",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_SELL_ORDERS",
+    "description": "Number of Sell orders at the moment",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SESSION_SELL_ORDERS_VOLUME",
+    "description": "Current volume of Sell orders",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_TURNOVER",
+    "description": "Summary turnover of the current session",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SESSION_VOLUME",
+    "description": "Summary volume of current session deals",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SPREAD",
+    "description": "Spread value in points",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SPREAD_FLOAT",
+    "description": "Indication of a floating spread",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_START_TIME",
+    "description": "Date of the symbol trade beginning (usually used for futures)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_LONG",
+    "description": "Long swap value",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE",
+    "description": "Swap calculation model",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_CURRENCY_DEPOSIT",
+    "description": "Swaps are charged in money, in client deposit currency",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_CURRENCY_MARGIN",
+    "description": "Swaps are charged in money in margin currency of the symbol",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_CURRENCY_SYMBOL",
+    "description": "Swaps are charged in money in base currency of the symbol",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_DISABLED",
+    "description": "Swaps disabled (no swaps)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_INTEREST_CURRENT",
+    "description": "Swaps are charged as the specified annual interest from the instrument price at calculation of swap (standard bank year is 360 days)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_INTEREST_OPEN",
+    "description": "Swaps are charged as the specified annual interest from the open price of position (standard bank year is 360 days)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_POINTS",
+    "description": "Swaps are charged in points",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_REOPEN_BID",
+    "description": "Swaps are charged by reopening positions. At the end of a trading day the position is closed. Next day it is reopened by the current Bid price +/- specified number of points (parameters SYMBOL_SWAP_LONG and SYMBOL_SWAP_SHORT)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_MODE_REOPEN_CURRENT",
+    "description": "Swaps are charged by reopening positions. At the end of a trading day the position is closed. Next day it is reopened by the close price +/- specified number of points (parameters SYMBOL_SWAP_LONG and SYMBOL_SWAP_SHORT)",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_ROLLOVER3DAYS",
+    "description": "Day of week to charge 3 days swap rollover",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_SWAP_SHORT",
+    "description": "Short swap value",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_TICKS_BOOKDEPTH",
+    "description": "Maximal number of requests shown in Depth of Market. For symbols that have no queue of requests, the value is equal to zero.",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TIME",
+    "description": "Time of the last quote",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_CALC_MODE",
+    "description": "Contract price calculation mode",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_CONTRACT_SIZE",
+    "description": "Trade contract size",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_TRADE_EXECUTION_EXCHANGE",
+    "description": "Exchange execution",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_EXECUTION_INSTANT",
+    "description": "Instant execution",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_EXECUTION_MARKET",
+    "description": "Market execution",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_EXECUTION_REQUEST",
+    "description": "Execution by request",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_EXEMODE",
+    "description": "Deal execution mode",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_FREEZE_LEVEL",
+    "description": "Distance to freeze trade operations in points",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_MODE",
+    "description": "Order execution type",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_MODE_CLOSEONLY",
+    "description": "Allowed only position close operations",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_MODE_DISABLED",
+    "description": "Trade is disabled for the symbol",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_MODE_FULL",
+    "description": "No trade restrictions",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_MODE_LONGONLY",
+    "description": "Allowed only long positions",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_MODE_SHORTONLY",
+    "description": "Allowed only short positions",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_STOPS_LEVEL",
+    "description": "Minimal indention in points from the current close price to place Stop orders",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_TRADE_TICK_SIZE",
+    "description": "Minimal price change",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_TRADE_TICK_VALUE",
+    "description": "Value of SYMBOL_TRADE_TICK_VALUE_PROFIT",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_TRADE_TICK_VALUE_LOSS",
+    "description": "Calculated tick price for a losing position",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_TRADE_TICK_VALUE_PROFIT",
+    "description": "Calculated tick price for a profitable position",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_VOLUME",
+    "description": "Volume of the last deal",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_VOLUME_LIMIT",
+    "description": "Maximum allowed aggregate volume of an open position and pending orders in one direction (buy or sell) for the symbol. For example, with the limitation of 5 lots, you can have an open buy position with the volume of 5 lots and place a pending order Sell Limit with the volume of 5 lots. But in this case you cannot place a Buy Limit pending order (since the total volume in one direction will exceed the limitation) or place Sell Limit with the volume more than 5 lots.",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_VOLUME_MAX",
+    "description": "Maximal volume for a deal",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_VOLUME_MIN",
+    "description": "Minimal volume for a deal",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_VOLUME_STEP",
+    "description": "Minimal volume change step for deal execution",
+    "usage": "SymbolInfoDouble"
+  },
+  {
+    "name": "SYMBOL_VOLUMEHIGH",
+    "description": "Maximal day volume",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "SYMBOL_VOLUMELOW",
+    "description": "Minimal day volume",
+    "usage": "SymbolInfoInteger"
+  },
+  {
+    "name": "TENKANSEN_LINE",
+    "description": "Tenkan-sen line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "TERMINAL_BUILD",
+    "description": "The client terminal build number",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_CODEPAGE",
+    "description": "Number of the code page of the language installed in the client terminal",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_COMMONDATA_PATH",
+    "description": "Common path for all of the terminals installed on a computer",
+    "usage": "TerminalInfoString"
+  },
+  {
+    "name": "TERMINAL_COMMUNITY_ACCOUNT",
+    "description": "The flag indicates the presence of MQL5.community authorization data in the terminal",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_COMMUNITY_BALANCE",
+    "description": "Balance in MQL5.community",
+    "usage": "TerminalInfoDouble"
+  },
+  {
+    "name": "TERMINAL_COMMUNITY_CONNECTION",
+    "description": "Connection to MQL5.community",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_COMPANY",
+    "description": "Company name",
+    "usage": "TerminalInfoString"
+  },
+  {
+    "name": "TERMINAL_CONNECTED",
+    "description": "Connection to a trade server",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_CPU_CORES",
+    "description": "The number of CPU cores in the system",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_DATA_PATH",
+    "description": "Folder in which terminal data are stored",
+    "usage": "TerminalInfoString"
+  },
+  {
+    "name": "TERMINAL_DISK_SPACE",
+    "description": "Free disk space for the MQL5\\Files folder of the terminal (agent), MB",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_DLLS_ALLOWED",
+    "description": "Permission to use DLL",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_EMAIL_ENABLED",
+    "description": "Permission to send e-mails using SMTP-server and login, specified in the terminal settings",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_FTP_ENABLED",
+    "description": "Permission to send reports using FTP-server and login, specified in the terminal settings",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_LANGUAGE",
+    "description": "Language of the terminal",
+    "usage": "TerminalInfoString"
+  },
+  {
+    "name": "TERMINAL_MAXBARS",
+    "description": "The maximal bars count on the chart",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_MEMORY_AVAILABLE",
+    "description": "Free memory of the terminal (agent) process, MB",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_MEMORY_PHYSICAL",
+    "description": "Physical memory in the system, MB",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_MEMORY_TOTAL",
+    "description": "Memory available to the process of the terminal (agent), MB",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_MEMORY_USED",
+    "description": "Memory used by the terminal (agent), MB",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_MQID",
+    "description": "The flag indicates the presence of MetaQuotes ID data for Push notifications",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_NAME",
+    "description": "Terminal name",
+    "usage": "TerminalInfoString"
+  },
+  {
+    "name": "TERMINAL_NOTIFICATIONS_ENABLED",
+    "description": "Permission to send notifications to smartphone",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_OPENCL_SUPPORT",
+    "description": "The version of the supported OpenCL in the format of 0x00010002 = 1.2. \"0\" means that OpenCL is not supported",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_PATH",
+    "description": "Folder from which the terminal is started",
+    "usage": "TerminalInfoString"
+  },
+  {
+    "name": "TERMINAL_SCREEN_DPI",
+    "description": "The resolution of information display on the screen is measured as number of Dots in a line per Inch (DPI).",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_TRADE_ALLOWED",
+    "description": "Permission to trade",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "TERMINAL_X64",
+    "description": "Indication of the \"64-bit terminal\"",
+    "usage": "TerminalInfoInteger"
+  },
+  {
+    "name": "THURSDAY",
+    "description": "Thursday",
+    "usage": "SymbolInfoInteger, SymbolInfoSessionQuote, SymbolInfoSessionTrade"
+  },
+  {
+    "name": "TRADE_ACTION_DEAL",
+    "description": "Place a trade order for an immediate execution with the specified parameters (market order)",
+    "usage": "MqlTradeRequest"
+  },
+  {
+    "name": "TRADE_ACTION_MODIFY",
+    "description": "Modify the parameters of the order placed previously",
+    "usage": "MqlTradeRequest"
+  },
+  {
+    "name": "TRADE_ACTION_PENDING",
+    "description": "Place a trade order for the execution under specified conditions (pending order)",
+    "usage": "MqlTradeRequest"
+  },
+  {
+    "name": "TRADE_ACTION_REMOVE",
+    "description": "Delete the pending order placed previously",
+    "usage": "MqlTradeRequest"
+  },
+  {
+    "name": "TRADE_ACTION_SLTP",
+    "description": "Modify Stop Loss and Take Profit values of an opened position",
+    "usage": "MqlTradeRequest"
+  },
+  {
+    "name": "TRADE_RETCODE_CANCEL",
+    "description": "Request canceled by trader",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_CLIENT_DISABLES_AT",
+    "description": "Autotrading disabled by client terminal",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_CONNECTION",
+    "description": "No connection with the trade server",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_DONE",
+    "description": "Request completed",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_DONE_PARTIAL",
+    "description": "Only part of the request was completed",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_ERROR",
+    "description": "Request processing error",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_FROZEN",
+    "description": "Order or position frozen",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_INVALID",
+    "description": "Invalid request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_INVALID_EXPIRATION",
+    "description": "Invalid order expiration date in the request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_INVALID_FILL",
+    "description": "Invalid order filling type",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_INVALID_ORDER",
+    "description": "Incorrect or prohibited order type",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_INVALID_PRICE",
+    "description": "Invalid price in the request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_INVALID_STOPS",
+    "description": "Invalid stops in the request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_INVALID_VOLUME",
+    "description": "Invalid volume in the request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_LIMIT_ORDERS",
+    "description": "The number of pending orders has reached the limit",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_LIMIT_VOLUME",
+    "description": "The volume of orders and positions for the symbol has reached the limit",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_LOCKED",
+    "description": "Request locked for processing",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_MARKET_CLOSED",
+    "description": "Market is closed",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_NO_CHANGES",
+    "description": "No changes in request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_NO_MONEY",
+    "description": "There is not enough money to complete the request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_ONLY_REAL",
+    "description": "Operation is allowed only for live accounts",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_ORDER_CHANGED",
+    "description": "Order state changed",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_PLACED",
+    "description": "Order placed",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_POSITION_CLOSED",
+    "description": "Position with the specified POSITION_IDENTIFIER has already been closed",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_PRICE_CHANGED",
+    "description": "Prices changed",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_PRICE_OFF",
+    "description": "There are no quotes to process the request",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_REJECT",
+    "description": "Request rejected",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_REQUOTE",
+    "description": "Requote",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_SERVER_DISABLES_AT",
+    "description": "Autotrading disabled by server",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_TIMEOUT",
+    "description": "Request canceled by timeout",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_TOO_MANY_REQUESTS",
+    "description": "Too frequent requests",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_RETCODE_TRADE_DISABLED",
+    "description": "Trade is disabled",
+    "usage": "MqlTradeResult"
+  },
+  {
+    "name": "TRADE_TRANSACTION_DEAL_ADD",
+    "description": "Adding a deal to the history. The action is performed as a result of an order execution or performing operations with an account balance.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_DEAL_DELETE",
+    "description": "Deleting a deal from the history. There may be cases when a previously executed deal is deleted from a server. For example, a deal has been deleted in an external trading system (exchange) where it was previously transferred by a broker.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_DEAL_UPDATE",
+    "description": "Updating a deal in the history. There may be cases when a previously executed deal is changed on a server. For example, a deal has been changed in an external trading system (exchange) where it was previously transferred by a broker.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_HISTORY_ADD",
+    "description": "Adding an order to the history as a result of execution or cancellation.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_HISTORY_DELETE",
+    "description": "Deleting an order from the orders history. This type is provided for enhancing functionality on a trade server side.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_HISTORY_UPDATE",
+    "description": "Changing an order located in the orders history. This type is provided for enhancing functionality on a trade server side.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_ORDER_ADD",
+    "description": "Adding a new open order.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_ORDER_DELETE",
+    "description": "Removing an order from the list of the open ones. An order can be deleted from the open ones as a result of setting an appropriate request or execution (filling) and moving to the history.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_ORDER_UPDATE",
+    "description": "Updating an open order. The updates include not only evident changes from the client terminal or a trade server sides but also changes of an order state when setting it (for example, transition from ORDER_STATE_STARTED to ORDER_STATE_PLACED or from ORDER_STATE_PLACED to ORDER_STATE_PARTIAL, etc.).",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_POSITION",
+    "description": "Changing a position not related to a deal execution. This type of transaction shows that a position has been changed on a trade server side. Position volume, open price, Stop Loss and Take Profit levels can be changed. Data on changes are submitted in MqlTradeTransaction structure via OnTradeTransaction handler. Position change (adding, changing or closing), as a result of a deal execution, does not lead to the occurrence of TRADE_TRANSACTION_POSITION transaction.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TRADE_TRANSACTION_REQUEST",
+    "description": "Notification of the fact that a trade request has been processed by a server and processing result has been received. Only type field (trade transaction type) must be analyzed for such transactions in MqlTradeTransaction structure. The second and third parameters of OnTradeTransaction (request and result) must be analyzed for additional data.",
+    "usage": "MqlTradeTransaction"
+  },
+  {
+    "name": "TUESDAY",
+    "description": "Tuesday",
+    "usage": "SymbolInfoInteger, SymbolInfoSessionQuote, SymbolInfoSessionTrade"
+  },
+  {
+    "name": "TYPE_BOOL",
+    "description": "bool",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_CHAR",
+    "description": "char",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_COLOR",
+    "description": "color",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_DATETIME",
+    "description": "datetime",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_DOUBLE",
+    "description": "double",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_FLOAT",
+    "description": "float",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_INT",
+    "description": "int",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_LONG",
+    "description": "long",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_SHORT",
+    "description": "short",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_STRING",
+    "description": "string",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_UCHAR",
+    "description": "uchar",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_UINT",
+    "description": "uint",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_ULONG",
+    "description": "ulong",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "TYPE_USHORT",
+    "description": "ushort",
+    "usage": "MqlParam"
+  },
+  {
+    "name": "UCHAR_MAX",
+    "description": "Maximal value, which can be represented by uchar type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "UINT_MAX",
+    "description": "Maximal value, which can be represented by uint type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "ULONG_MAX",
+    "description": "Maximal value, which can be represented by ulong type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "UPPER_BAND",
+    "description": "Upper limit",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "UPPER_HISTOGRAM",
+    "description": "Upper histogram",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "UPPER_LINE",
+    "description": "Upper line",
+    "usage": "Indicators Lines"
+  },
+  {
+    "name": "USHORT_MAX",
+    "description": "Maximal value, which can be represented by ushort type",
+    "usage": "Numerical Type Constants"
+  },
+  {
+    "name": "VOLUME_REAL",
+    "description": "Trade volume",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "VOLUME_TICK",
+    "description": "Tick volume",
+    "usage": "Price Constants"
+  },
+  {
+    "name": "WEDNESDAY",
+    "description": "Wednesday",
+    "usage": "SymbolInfoInteger, SymbolInfoSessionQuote, SymbolInfoSessionTrade"
+  },
+  {
+    "name": "WHOLE_ARRAY",
+    "description": "Means the number of items remaining until the end of the array, i.e., the entire array will be processed",
+    "usage": "Other Constants"
+  },
+  {
+    "name": "WRONG_VALUE",
+    "description": "The constant can be implicitly cast to any enumeration type",
+    "usage": "Other Constants"
+  }
+]
