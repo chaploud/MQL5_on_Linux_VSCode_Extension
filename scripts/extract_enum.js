@@ -1,3 +1,5 @@
+// Extract enum definitions from MQL5 documentation
+
 /**
  * Extract constant names and descriptions from the ENUM description table in MQL5
  * @param {string} title - Table Title
